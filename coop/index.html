@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Coop Indkøbsliste App">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="UCL">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COOP SPIL</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+        .brun_tekst{
+            color:brown;
+        }
+    </style>
+    <script>
+        function start_spil(){
+            document.getElementById("spilleplade").innerHTML = "Find et holdkæft bolcher til børn";
+            document.getElementById("spilleplade").className = "brun_tekst";
+        }
+
+
+
+    </script>
+    </head>
+<body>
+
+    <h1>Velkommen til COOP.</h1>
+    <p>Vi underholder de små mens I handler ind.</p>
+    <a href="#" onclick="start_spil()">Klik her for at starte</a>
+    <br /><br />
+    <div id="spilleplade">
+</div>
+<div id=kontrol>  </div>
+</body>
+</html>

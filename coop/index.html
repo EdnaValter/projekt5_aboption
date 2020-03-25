@@ -1,32 +1,53 @@
 <!DOCTYPE html>
-    <html>
+<html>
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="Coop Spil">
+        <meta name="description" content="Coop App">
         <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-        <meta name="author" content="UCL">
+        <meta name="UCL Studerende gruppe 4" content="UCL">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>COOP SPIL</title>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
-    <script>
-        function start_spil(){
-            document.getElementById("spilleplade").innerHTML = "Find et holdkæft bolcher til børn";
-            document.getElementById("spilleplade").className = "brun_tekst";
-        }
+        <title>COOP App</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="javascript.js"></script>
+      </head>
+    <body>
+        <main>
+            <div id="login_page">
+                <h1>Login til Coop</h1><br />
+                <input type="email" id="email" placeholder="Email adresse"/><br />
+                <input type="password" id="password" placeholder="kodeord"/><br />
+                <br />
+                <button type="button" onclick="login(document.getElementById('email').value, document.getElementById('password').value)">Login</button>
+                <p>Eller</p>
+                <!--<button type="button" onclick="OpretBruger(document.getElementById().value)">Opret Bruger</button>-->
+            </div>
+            <div id="OpretBruger">
+                Opret Bruger
 
+            </div>
+            <div id="home_page">
+                <header>
+                    <h2>COOP HEADER</h2>
+                </header>
+                <main id="main_content">
+                    <h1>Tilbud</h1><br />
+                    <button type="button" onclick="go_to_content('main_content', 'main_scan')">Monster Scan</button><br /><br />
+                    <button type="button" onclick="">Indkøbsseddel</button><br /><br />
+                    <button type="button" onclick="">Lokationer</button><br /><br />
+                    <button type="button" onclick="">Nyheder</button><br /><br />
+                    <button type="button" onclick="logout()">Log af</button><br /><br />
+                </main>
+                <main id="main_scan">
+                    <h1>Monster main_scan</h1><br />
+                    <button type="button" onclick="">Start</button><br /><br />
+                    <button type="button" onclick="">Indkøbsseddel</button><br /><br />
+                    <button type="button" onclick="">Samling</button><br /><br />
+                    <button type="button" onclick="">Indstilinger</button><br /><br />
+                    <button type="button" onclick="go_to_content('main_scan', 'main_content')">Tilbage</button><br /><br />
+                </main>
 
-
-    </script>
-    </head>
-<body>
-
-    <h1>Velkommen til COOP.</h1>
-    <p>Vi underholder de små mens I handler ind.</p>
-    <a href="#" onclick="start_spil()">Klik her for at starte</a>
-    <br /><br />
-    <div id="spilleplade">
-</div>
-<div id=kontrol>  </div>
-</body>
+                <footer>COOP FOOTER</footer>
+            </div>
+        </main>
+    </body>
 </html>

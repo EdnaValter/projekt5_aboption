@@ -2,32 +2,53 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+html {
+  text-align: center;
+  background-color: royalblue;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  max-width: 100%;
+  background-color: whitesmoke;
+  height: 620px;
+  }
+main {
+  
+}
+header{
+  height: 200px;
+  background-color: teal;
+
+} 
+#home_page {
+  display: none;
 }
 
-body {
-    font-family: 'Raleway', sans-serif;
-  }
-  
-  h1 {
-    color: white;
+#main_scan {
+  display: none;
+}
+/*Login style starts here*/
+h1 {
     text-align: center;
   }
+input {
+
+}
   
-  p {
+
+p {
     font-family: verdana;
     font-size: 20px;
   }
 
-  .brun_tekst{
-      color:brown;
-  }
 
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 620px) {
     /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
-    }
+      body: width: 100%;
+      text-align: center;
+  }
   }

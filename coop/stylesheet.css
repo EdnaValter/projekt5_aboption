@@ -20,6 +20,10 @@ body {
     font-size: 20px;
   }
 
+  .brun_tekst{
+      color:brown;
+  }
+
 
   @media only screen and (max-width: 768px) {
     /* For mobile phones: */

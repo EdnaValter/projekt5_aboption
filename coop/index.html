@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="Coop App">
         <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-        <meta name="UCL Studerende gruppe 4" content="UCL">
+        <meta name="Coop spil" content="Coop webapp">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>COOP App</title>
         <link rel="stylesheet" href="stylesheet.css">
@@ -19,11 +19,17 @@
                 <br />
                 <button type="button" onclick="login(document.getElementById('email').value, document.getElementById('password').value)">Login</button>
                 <p>Eller</p>
-                <button type="button" onclick="OpretBruger(document.getElementById().value)">Opret Bruger</button>
+                <button type="button" onclick="OpretBruger(document.getElementById('firstname').value, document.getElementById('lastname'))">Opret Bruger</button>
             </div>
-            <div id="OpretBruger">
+            <div id="Opretbruger">
                 Opret Bruger
-
+                <form action="">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="firstname" name="firstname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lastname" name="lastname"><br><br>
+                    <input type="submit" value="Opret Bruger">
+                </form>
             </div>
             <div id="home_page">
                 <header>

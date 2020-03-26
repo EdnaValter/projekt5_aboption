@@ -30,6 +30,9 @@ header{
 #main_scan {
   display: none;
 }
+#Opretbruger {
+  display: none;
+}
 /*Login style starts here*/
 h1 {
     text-align: center;

@@ -6,6 +6,15 @@ function login(email, password){
         alert('Forkert email eller kodeord.');
     }
 }
+function OpretBruger(firstname, lastname){
+    if(firstname=="Anton" && lastname=="Wich"){
+        document.getElementById("Opretbruger").style.display = "none";
+        document.getElementById("home_page").style.display = "block";
+        alert("Du blev oprettet");
+    }else{
+        alert('Udfyld formular.');
+    }
+}
 
 function logout(){
         document.getElementById("home_page").style.display = "none";
@@ -17,8 +26,3 @@ function go_to_content(current_content_name, new_content_name){
     document.getElementById(new_content_name).style.display = "block";
 
 }
-/*
-function OpretBruger() {
-    document.getElementById(OpretBruger).style.display ="block";
-    document.getElementById(OpretBruger).style.display = "none";
-}*/

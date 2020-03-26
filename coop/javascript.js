@@ -6,9 +6,17 @@ function login(email, password){
         alert('Forkert email eller kodeord.');
     }
 }
-function OpretBruger(firstname, lastname){
+
+function go_to_opret_bruger(){
+    document.getElementById("login_page").style.display = "none";
+    document.getElementById("opret_bruger").style.display = "block";
+}
+
+
+
+function OpretBruger(firstname, lastname, email, password){
     if(firstname=="Anton" && lastname=="Wich"){
-        document.getElementById("Opretbruger").style.display = "none";
+        document.getElementById("opret_bruger").style.display = "none";
         document.getElementById("home_page").style.display = "block";
         alert("Du blev oprettet");
     }else{

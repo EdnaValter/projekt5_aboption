@@ -21,4 +21,4 @@ function go_to_content(current_content_name, new_content_name){
 function OpretBruger() {
     document.getElementById(OpretBruger).style.display ="block";
     document.getElementById(OpretBruger).style.display = "none";
-}
+}*/

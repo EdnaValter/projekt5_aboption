@@ -1,11 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
 body {
+    height: 100%;
     width: 100%;
     text-align: center;
-    height: 100%;
-}.main_content {
+    font-family: 'Raleway', sans-serif;
+}
+.main_content {
     border: 5px #c90a11;
     border-style: solid;
     max-width: 1200px;
+}
+/*Header style*/
+header{
+    box-shadow: 0 8px 10px -8px #4E535D ;
+    height: 65px;
+}
+header.header_logo {
+    width: 60%;
+}
+img.cooplogo {
+    height: 100px;
+    width: 400px;
+    float: left;
+}
+header.header_homeikon_burgermenu {
+    width: 40%;
+    float: right;
+}
+img.burgermenu {
+    height: 100px;
+    width: 100px;
+    float: right;
+}
+/*Coop Butikker Menu*/
+.coop_butikker {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.coop_butikker, img {
+    padding: 10px;
+}
+/*Coop footer*/
+footer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    box-shadow: 0 -5px 10px -5px #333;
+}
+footer.footer_kurv {
+    float: left;
+ 
+    background-color: indigo;
+}
+footer.footer_seddel {
+
+    float: right;
 }
 /* flex box container*/
 
@@ -180,4 +238,43 @@ form {
 footer {
     height: 50px;
 }
- 
+ /* DESKTOP */
+@media screen and (min-width: 1024px) {
+    main, footer{
+        max-width:66%;
+        margin:0 auto;
+    }
+    header {
+        display: none;
+    }
+}
+ /* Mobiles */
+@media screen and (max-width: 568px) {
+    header {
+        padding: 10px;
+    }
+    .header_logo {
+        width: 40%;
+        float: left;
+    }
+    img.cooplogo {
+        width: 150px;
+        height: 60px;
+    }
+
+    .header_homeikon_burgermenu {
+        width: 40%;
+        float:right;
+        margin-right: 20px;
+    }
+    img.home_knap {
+       padding-left: 10px;
+       width: 60px;
+       height: 60px;
+    }
+    img.burgermenu {
+        width: 50px;
+        height: 50px;
+        padding-left: 10px;
+     }
+  }

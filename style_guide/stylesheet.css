@@ -281,6 +281,12 @@ img.footer_seddel {
         float:right;
         margin-right: 20px;
     }
+    footer {
+        clear: both;
+        position: relative;
+        height: 65px;
+        margin-top: -65px;
+    }
 }
  /* Mobiles */
 @media screen and (max-width: 568px) {
@@ -310,9 +316,11 @@ img.footer_seddel {
         height: 50px;
         padding-left: 10px;
      }
-     footer {
+    footer {
+        clear: both;
+        position: relative;
         height: 65px;
-        width: 100%;
+        margin-top: -65px;
     }
     /*nav css starts here*/
     nav {

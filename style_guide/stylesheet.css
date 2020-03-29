@@ -43,9 +43,11 @@ img.burgermenu {
    
 }
 /*Coop Menu*/
-nav {
-    
+.menu {
+    display: flex;
+    flex-direction: column;
 }
+
 /*Coop Butikker Menu*/
 .coop_butikker {
     display: flex;
@@ -282,6 +284,7 @@ img.footer_seddel {
 }
  /* Mobiles */
 @media screen and (max-width: 568px) {
+    /*header css starts here*/
     header {
         height: 65px;
   }
@@ -310,5 +313,42 @@ img.footer_seddel {
      footer {
         height: 65px;
         width: 100%;
+    }
+    /*nav css starts here*/
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    nav, ul {
+        justify-content: center;
+    }
+    li{     
+        background-color: #c90a11; 
+        margin: 20px;
+        border-radius: 10px;
+        width: 250px;
+        list-style-type: none;
+    }
+   .tilbud, .monster_scan, .kurv, .butikker, .nyheder {
+        text-decoration: none;
+        color: #efefef;
+        margin: 10px;
+        line-height: 80px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .tilbud {
+        font-size: 40px;
   }
-  }
+  
+/*Coop Butikker Menu*/
+.coop_butikker {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.coop_butikker, img {
+    padding: 10px;
+}
+}

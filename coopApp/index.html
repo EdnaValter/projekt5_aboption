@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Coop App">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="Coop spil" content="Coop webapp">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COOP App</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="javascript.js"></script>
+      </head>
+    <body>
+        <main>
+            <div id="login_page">
+                <h1>Login til Coop</h1><br />
+                <input type="email" id="email" placeholder="Email adresse"/><br />
+                <input type="password" id="password" placeholder="kodeord"/><br />
+                <br />
+                <button type="button" onclick="login(document.getElementById('email').value, document.getElementById('password').value)">Login</button>
+                <p>Eller</p>
+                <button type="button" onclick="go_to_opret_bruger()">Opret Bruger</button>
+            </div>
+            <div id="opret_bruger">
+                Opret Bruger
+                <form action="">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="firstname" name="firstname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lastname" name="lastname"><br><br>
+                    <label for="opret_email">Email:</label>
+                    <input type="text" id="opret_email" name="opret_email"><br><br>
+                    <label for="opret_password">Password:</label>
+                    <input type="text" id="opret_password" name="opret_password"><br><br>
+
+
+
+                    <input type="button" value="Opret Bruger" onclick="OpretBruger(document.getElementById('firstname').value, document.getElementById('lastname').value, document.getElementById('opret_email').value, document.getElementById('opret_password').value)">
+                </form>
+            </div>
+            <div id="home_page">
+                <header>
+                    <h2>COOP HEADER</h2>
+                </header>
+                <main id="main_content">
+                    <h1>Tilbud</h1><br />
+                    <button type="button" onclick="go_to_content('main_content', 'main_scan')">Monster Scan</button><br /><br />
+                    <button type="button" onclick="">Indkøbsseddel</button><br /><br />
+                    <button type="button" onclick="">Lokationer</button><br /><br />
+                    <button type="button" onclick="">Nyheder</button><br /><br />
+                    <button type="button" onclick="logout()">Log af</button><br /><br />
+                </main>
+                <main id="main_scan">
+                    <h1>Monster main_scan</h1><br />
+                    <button type="button" onclick="">Start</button><br /><br />
+                    <button type="button" onclick="">Indkøbsseddel</button><br /><br />
+                    <button type="button" onclick="">Samling</button><br /><br />
+                    <button type="button" onclick="">Indstilinger</button><br /><br />
+                    <button type="button" onclick="go_to_content('main_scan', 'main_content')">Tilbage</button><br /><br />
+                </main>
+
+                <footer>COOP FOOTER</footer>
+            </div>
+        </main>
+    </body>
+</html>

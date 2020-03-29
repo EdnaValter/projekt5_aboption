@@ -14,29 +14,37 @@ body {
 .main_content {
     border: 5px #c90a11;
     border-style: solid;
-    max-width: 1200px;
+    max-width: 1024px;
 }
 /*Header style*/
 header{
-    box-shadow: 0 8px 10px -8px #4E535D ;
-    height: 65px;
+    box-shadow: 0 8px 10px -8px #4E535D;
+    height: 50px;
 }
 header.header_logo {
     width: 60%;
 }
 img.cooplogo {
-    height: 100px;
-    width: 400px;
+    width: 150px;
+    height: 60px;
     float: left;
 }
 header.header_homeikon_burgermenu {
     width: 40%;
     float: right;
 }
+img.home_knap {
+    height: 100px;
+    width: 100px;
+}
 img.burgermenu {
     height: 100px;
     width: 100px;
-    float: right;
+   
+}
+/*Coop Menu*/
+nav {
+    
 }
 /*Coop Butikker Menu*/
 .coop_butikker {
@@ -47,32 +55,15 @@ img.burgermenu {
 .coop_butikker, img {
     padding: 10px;
 }
-/*Coop footer*/
-footer {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    box-shadow: 0 -5px 10px -5px #333;
-}
-footer.footer_kurv {
-    float: left;
- 
-    background-color: indigo;
-}
-footer.footer_seddel {
 
-    float: right;
-}
-/* flex box container*/
+/* flex box container til coop style guide*/
 
 article.flex_container > section {
     display: flex;
     width: 800px;
-    background-color: dodgerblue;
+    background-color: #c90a11;
     text-align: center;
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 .solid1 {
@@ -137,8 +128,8 @@ article.flex_container > section {
     font-size: 30px;
 }
 .solid7 {
-    height: 70px;
-    width: 70px;
+    height: 100px;
+    width: 100px;
     padding: 10px;
     margin-left: 10px;
     color: white;
@@ -148,8 +139,8 @@ article.flex_container > section {
     font-size: 18px;
 }
 .solid8 {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     padding: 10px;
     margin-left: 10px;
     color: #c90a11;
@@ -174,7 +165,7 @@ img.medium{
     padding: 10px;
 }
 img.clipboard_xs{
-    width: 50px;
+    width: 60px;
     height: 70px;
     padding: 10px;
 }
@@ -232,27 +223,68 @@ form {
     height: 200px;
     width: 200px;
 }
-
-
-
-footer {
+/*Coop footer*/
+footer{
+    margin-top: 20px;
+    box-shadow: 0 -8px 10px -8px #4E535D;
     height: 50px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
 }
+footer.footer_kurv {
+    width: 50%;
+}
+img.footer_kurv {
+    width: 150px;
+    height: 60px;
+    float: left;
+}
+footer.footer_seddel {
+    width: 50%;
+    float: right;
+}
+img.footer_seddel {
+    width: 150px;
+    height: 60px;
+    float: right;
+}
+
  /* DESKTOP */
 @media screen and (min-width: 1024px) {
-    main, footer{
-        max-width:66%;
-        margin:0 auto;
-    }
     header {
+        display: block;
+    }
+    .header_homeikon_burgermenu {
         display: none;
+        width: 40%;
+        float:right;
+        margin-right: 20px;
+    }
+}
+
+ /* iPad */
+ @media screen and (min-width: 768px) {
+    header, footer {
+        display: block;
+        width: 100%;
+        height: 100px;
+    }
+    img.cooplogo {
+        width: 200px;
+        height: 80px;
+    }
+    .header_homeikon_burgermenu {
+        width: 40%;
+        float:right;
+        margin-right: 20px;
     }
 }
  /* Mobiles */
 @media screen and (max-width: 568px) {
     header {
-        padding: 10px;
-    }
+        height: 65px;
+  }
     .header_logo {
         width: 40%;
         float: left;
@@ -265,10 +297,8 @@ footer {
     .header_homeikon_burgermenu {
         width: 40%;
         float:right;
-        margin-right: 20px;
     }
     img.home_knap {
-       padding-left: 10px;
        width: 60px;
        height: 60px;
     }
@@ -277,4 +307,8 @@ footer {
         height: 50px;
         padding-left: 10px;
      }
+     footer {
+        height: 65px;
+        width: 100%;
+  }
   }

@@ -3,15 +3,17 @@
 * {
     margin: 0; 
     padding: 0; 
+    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
 body {
     height: 100%;
     width: 100%;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
 }
 .main_content {
+    height: 100%;
+    width: 100%;
     border: 5px #c90a11;
     border-style: solid;
     max-width: 1024px;
@@ -44,11 +46,38 @@ img.burgermenu {
 }
 /*Coop Menu*/
 .menu {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-/*Coop Butikker Menu*/
+/*Coop Butikker Menu / Nav*/
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+nav, ul {
+    justify-content: center;
+}
+nav li{     
+    background-color: #c90a11; 
+    margin: 20px;
+    border-radius: 10px;
+    width: 250px;
+    list-style-type: none;
+}
+nav li a {
+    text-decoration: none;
+}
+.tilbud, .monster_scan, .kurv, .butikker, .nyheder {
+    text-decoration: none;
+    color: #efefef;
+    margin: 10px;
+    line-height: 80px;
+    font-size: 25px;
+    font-weight: bold;
+}
 .coop_butikker {
     display: flex;
     flex-direction: column;
@@ -62,10 +91,12 @@ img.burgermenu {
 
 article.flex_container > section {
     display: flex;
-    width: 800px;
-    background-color: #c90a11;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 80%;
+    min-width: 80%;
+    background-color: #cac4c4;
     text-align: center;
-    margin-left: 100px;
 }
 
 .solid1 {
@@ -263,6 +294,14 @@ img.footer_seddel {
         float:right;
         margin-right: 20px;
     }
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul {
+        justify-content: center;
+    }
+
 }
 
  /* iPad */
@@ -323,10 +362,13 @@ img.footer_seddel {
         margin-top: -65px;
     }
     /*nav css starts here*/
-    nav {
+    .menu{
         width: 100%;
+    }
+    nav {
         display: flex;
         flex-direction: row;
+        margin-bottom: 50px;
     }
     nav, ul {
         justify-content: center;
@@ -351,12 +393,23 @@ img.footer_seddel {
   }
   
 /*Coop Butikker Menu*/
+
 .coop_butikker {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 10px;
 }
-.coop_butikker, img {
-    padding: 10px;
+.valgbutik {
+    font-size: 40px;
+    color: #c90a11;
+    margin-bottom: 10px;
+}
+.brugsenlogo, .superbrugsenlogo, .kvicklylogo, .dagliglogo, .irmalogo {
+    width: 200px;
+    height: 70px;
+}
+.faktalogo {
+    width: 210px;
+    height: 90px;
 }
 }

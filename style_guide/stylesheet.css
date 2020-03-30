@@ -16,6 +16,16 @@ body {
     margin: auto;
     max-width: 1024px;
 }
+/* flex box container til coop style guide*/
+/*
+article.flex_container > section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 80%;
+    min-width: 80%;
+    text-align: center;
+}
 /*Header style*/
 header{
     box-shadow: 0 8px 10px -8px #4E535D;
@@ -47,19 +57,18 @@ img.burgermenu {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .tilbud {
     font-size: 40px;
 }
-/*Coop Butikker Menu / Nav*/
+/*Coop Butikker Menu og Nav*/
 nav {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     padding: 10px;
 }
-nav, ul {
-    justify-content: center;
-}
+
 nav li{     
     background-color: #c90a11; 
     margin: 20px;
@@ -87,175 +96,6 @@ nav li a {
     padding: 10px;
 }
 
-/* flex box container til coop style guide*/
-
-article.flex_container > section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    min-height: 80%;
-    min-width: 80%;
-    background-color: #cac4c4;
-    text-align: center;
-}
-
-.solid1 {
-    height: 100px;
-    width: 100px;
-    padding: 10px;
-    margin-left: 10px;
-    color: #c90a11;
-    border: 2px black;
-    border-style: solid;
-    background-color: #efefef;
-}
-.solid2 {
-    height: 100px;
-    width: 100px;
-    padding: 10px;
-    margin-left: 10px;
-    color: #c90a11;
-    border: 2px black;
-    border-style: solid;
-    background-color: #f6f6f6;
-}
-.solid3 {
-    height: 100px;
-    width: 100px;
-    padding: 10px;
-    margin-left: 10px;
-    color: #c90a11;
-    border: 2px black;
-    border-style: solid;
-    background-color: #ffffff;
-}
-.solid4 {
-    height: 100px;
-    width: 100px;
-    padding: 10px;
-    margin-left: 10px;
-    color: white;
-    border: 2px black;
-    border-style: solid;
-    background-color: #c90a11;
-}
-.solid5 {
-    height: 100px;
-    width: 100px;
-    padding: 10px;
-    margin-left: 10px;
-    color: #c90a11;
-    border: 2px black;
-    border-style: solid;
-    background-color: #121212;
-}
-.solid6 {
-    height: 100px;
-    width: 100px;
-    padding: 10px;
-    margin-left: 10px;
-    color: #c90a11;
-    border: 2px black;
-    border-style: solid;
-    background-color: #ffffff;
-    font-size: 30px;
-}
-.solid7 {
-    height: 100px;
-    width: 100px;
-    padding: 10px;
-    margin-left: 10px;
-    color: white;
-    border: 2px black;
-    border-style: solid;
-    background-color: #4E535D;
-    font-size: 18px;
-}
-.solid8 {
-    height: 100px;
-    width: 100px;
-    padding: 10px;
-    margin-left: 10px;
-    color: #c90a11;
-    border: 2px black;
-    border-style: solid;
-    background-color: #efefef;
-    font-size: 10px;
-}
-img.xs{
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-}
-img.small{
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-}
-img.medium{
-    width: 150px;
-    height: 150px;
-    padding: 10px;
-}
-img.clipboard_xs{
-    width: 60px;
-    height: 70px;
-    padding: 10px;
-}
-img.clipboard_small{
-    width: 100px;
-    height: 120px;
-    padding: 10px;
-}
-img.clipboard_medium{
-    width: 150px;
-    height: 170px;
-    padding: 10px;
-}
-img.smør_xs{
-    width: 100px;
-    height: 80px;
-    padding: 10px;
-}
-img.smør_small{
-    width: 120px;
-    height: 100px;
-    padding: 10px;
-}
-img.smør_medium{
-    width: 170px;
-    height: 150px;
-    padding: 10px;
-}
-img.tilbudikon_xs {
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-}
-img.tilbudikon_small {
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-}
-img.tilbudikon_medium {
-    width: 150px;
-    height: 150px;
-    padding: 10px;
-}
-
-img.tilbudikonsvg_xs {
-    width: 200px;
-}
-img.tilbudikonsvg_small {
-    width: 300px;
-}
-img.tilbudikonsvg_medium {
-    width: 400px;
-}
-form {
-    height: 200px;
-    width: 200px;
-}
 /*Coop footer*/
 footer{
     margin-top: 20px;
@@ -265,22 +105,19 @@ footer{
     left: 0px;
     top: 150px;
 }
+footer.footer_store {
+    width: 50%;
+}
 footer.footer_kurv {
     width: 50%;
 }
-img.footer_kurv {
+.footer_store {
+    width: 70px;
+    height: 90px;
+}
+.footer_kurv {
     width: 150px;
     height: 60px;
-    float: left;
-}
-footer.footer_seddel {
-    width: 50%;
-    float: right;
-}
-img.footer_seddel {
-    width: 150px;
-    height: 60px;
-    float: right;
 }
 
  /* DESKTOP */
@@ -297,11 +134,17 @@ img.footer_seddel {
         display: flex;
         flex-direction: column;
     }
+    .valgbutik {
+        font-size: 40px;
+        color: #c90a11;
+        margin-bottom: 10px;
+    }
 
 }
 
  /* iPad */
  @media screen and (min-width: 768px) {
+    /* flex box container til coop style guide*/
     header, footer {
         display: block;
         width: 100%;
@@ -322,9 +165,62 @@ img.footer_seddel {
         height: 65px;
         margin-top: -65px;
     }
+    img.footer_store {
+        width: 90px;
+        float: left;
+        margin-left: 100px;
+    }
+    img.footer_kurv {
+        height: 90px;
+        width: 80px;
+        float: right;
+        margin-right: 100px;
+    }
+    .valgbutik {
+        font-size: 40px;
+        color: #c90a11;
+        margin-bottom: 10px;
+    }
+    img.footer_kurv {
+        height: 70px;
+        width: 60px;
+        float: right;
+        margin-right: 50px;
+    }
+    img.scanner, img.butter, img.cow {
+        height: 300px;
+        width: 300px;
+    }
+    .grey_tekst {
+        font-size: 40px;
+        color: #4E535D;
+        margin-bottom: 30px;
+    }
+    a.next {
+        margin-top: 100px;
+        border: 2px solid #4E535D;
+        padding: 10px 50px;
+        color: #4E535D;
+        font-size: 25px;
+        font-weight: bold;
+      }
+    a {
+        text-decoration: none;
+      }
+      h1 {
+          font-size: 50px;
+      }
+
 }
  /* Mobiles */
 @media screen and (max-width: 568px) {
+    article.flex_container {
+        max-width: 568px;
+        height: 100%;
+    }
+    .main_content {
+        margin: auto;
+    }
     /*header css starts here*/
     header {
         height: 65px;
@@ -351,12 +247,6 @@ img.footer_seddel {
         height: 50px;
         padding-left: 10px;
      }
-    footer {
-        clear: both;
-        position: relative;
-        height: 65px;
-        margin-top: -65px;
-    }
     /*nav css starts here*/
     .menu{
         width: 100%;
@@ -408,4 +298,52 @@ img.footer_seddel {
     width: 210px;
     height: 90px;
 }
+/*Footer ikoner*/
+footer {
+    clear: both;
+    position: relative;
+    height: 65px;
+    margin-top: -65px;
+    width: 100%;
+}
+img.footer_store {
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin-left: 50px;
+}
+img.footer_kurv {
+    height: 70px;
+    width: 60px;
+    float: right;
+    margin-right: 50px;
+}
+/*Find Varer*/
+img.butter {
+    width: 150px;
+    height: 130px;
+}
+img.cow, img.scanner {
+    width: 150px;
+    height: 130px;
+}
+.grey_tekst {
+    font-size: 40px;
+    color: #4E535D;
+    margin-bottom: 30px;
+}
+a.next {
+    margin-top: 100px;
+    border: 2px solid #4E535D;
+    padding: 10px 50px;
+    color: #4E535D;
+    font-size: 25px;
+    font-weight: bold;
+  }
+a {
+    text-decoration: none;
+  }
+  h1 {
+      font-size: 50px;
+  }
 }

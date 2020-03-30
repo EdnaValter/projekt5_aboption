@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.main_content {
+    height: 100%;
+    margin: auto;
+    max-width: 1024px;
+}
+/* flex box container til coop style guide*/
+
+article.flex_container > section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 80%;
+    min-width: 80%;
+    background-color: #cac4c4;
+    text-align: center;
+}
+
+.solid1 {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    color: #c90a11;
+    border: 2px black;
+    border-style: solid;
+    background-color: #efefef;
+}
+.solid2 {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    color: #c90a11;
+    border: 2px black;
+    border-style: solid;
+    background-color: #f6f6f6;
+}
+.solid3 {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    color: #c90a11;
+    border: 2px black;
+    border-style: solid;
+    background-color: #ffffff;
+}
+.solid4 {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    color: white;
+    border: 2px black;
+    border-style: solid;
+    background-color: #c90a11;
+}
+.solid5 {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    color: #c90a11;
+    border: 2px black;
+    border-style: solid;
+    background-color: #121212;
+}
+.solid6 {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    color: #c90a11;
+    border: 2px black;
+    border-style: solid;
+    background-color: #ffffff;
+    font-size: 30px;
+}
+.solid7 {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    color: white;
+    border: 2px black;
+    border-style: solid;
+    background-color: #4E535D;
+    font-size: 18px;
+}
+.solid8 {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    color: #c90a11;
+    border: 2px black;
+    border-style: solid;
+    background-color: #efefef;
+    font-size: 10px;
+}
+img.xs{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+img.small{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+img.medium{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+img.clipboard_xs{
+    width: 60px;
+    height: 70px;
+    padding: 10px;
+}
+img.clipboard_small{
+    width: 100px;
+    height: 120px;
+    padding: 10px;
+}
+img.clipboard_medium{
+    width: 150px;
+    height: 170px;
+    padding: 10px;
+}
+img.smør_xs{
+    width: 100px;
+    height: 80px;
+    padding: 10px;
+}
+img.smør_small{
+    width: 120px;
+    height: 100px;
+    padding: 10px;
+}
+img.smør_medium{
+    width: 170px;
+    height: 150px;
+    padding: 10px;
+}
+img.tilbudikon_xs {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+img.tilbudikon_small {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+img.tilbudikon_medium {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+img.tilbudikonsvg_xs {
+    width: 200px;
+}
+img.tilbudikonsvg_small {
+    width: 300px;
+}
+img.tilbudikonsvg_medium {
+    width: 400px;
+}
+form {
+    height: 200px;
+    width: 200px;
+}

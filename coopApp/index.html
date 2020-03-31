@@ -4,51 +4,53 @@
         <meta charset="UTF-8">
         <meta name="description" content="Coop App">
         <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-        <meta name="Coop spil" content="Coop webapp">
+        <meta name="Coop spil" content="Coop app, spil til børnefamilier">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>COOP App</title>
         <link rel="stylesheet" href="stylesheet.css">
         <script src="javascript.js"></script>
       </head>
     <body>
-        <main>
+        <main class="main_container">
             <div id="login_page">
-                <h1>Login til Coop</h1><br />
-                <input type="email" id="email" placeholder="Email adresse"/><br />
-                <input type="password" id="password" placeholder="kodeord"/><br />
+                <a href="index.html"><img src="img_small/cooplogo_red.png" alt="coop logo"></a>
+                <h2 class="valgbutik">Login til Coop</h2><br />
+                <input type="email" id="email" placeholder="Email"/><br />
+                <input type="password" id="password" placeholder="Kodeord"/><br />
                 <br />
-                <button type="button" onclick="login(document.getElementById('email').value, document.getElementById('password').value)">Login</button>
+                <button class="login" type="button" onclick="login(document.getElementById('email').value, document.getElementById('password').value)">Login</button>
                 <p>Eller</p>
-                <button type="button" onclick="go_to_opret_bruger()">Opret Bruger</button>
+                <button class="opretbruger" type="button" onclick="go_to_opret_bruger()">Opret Bruger</button>
             </div>
-            <div id="opret_bruger">
-                Opret Bruger
+            <div id="opret_bruger"> 
+                <a href="index.html"><img src="img_small/cooplogo_red.png" alt="coop logo"></a>
+                <h2 class="valgbutik">Opret Bruger</h2>
                 <form action="">
-                    <label for="fname">First name:</label>
-                    <input type="text" id="firstname" name="firstname"><br><br>
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lastname" name="lastname"><br><br>
-                    <label for="opret_email">Email:</label>
-                    <input type="text" id="opret_email" name="opret_email"><br><br>
-                    <label for="opret_password">Password:</label>
-                    <input type="text" id="opret_password" name="opret_password"><br><br>
-
-
-
-                    <input type="button" value="Opret Bruger" onclick="OpretBruger(document.getElementById('firstname').value, document.getElementById('lastname').value, document.getElementById('opret_email').value, document.getElementById('opret_password').value)">
+                    <input type="text" id="firstname" name="firstname" placeholder="Fornavn"><br><br>
+                    <input type="text" id="lastname" name="lastname" placeholder="Efternavn"><br><br>
+                    <input type="text" id="opret_email" name="opret_email" placeholder="Email"><br><br>
+                    <input type="text" id="opret_password" name="opret_password" placeholder="Kodeord"><br><br>
+                    <input class="opretbruger" type="button" value="Opret" onclick="OpretBruger(document.getElementById('firstname').value, document.getElementById('lastname').value, document.getElementById('opret_email').value, document.getElementById('opret_password').value)">
                 </form>
             </div>
             <div id="home_page">
-                <header>
-                    <h2>COOP HEADER</h2>
+                <header>  
+                    <div class="header_logo">
+                        <a href="#" ><img class="cooplogo" src="img_small/cooplogo_red.png" alt="coop logo"></a>
+                    </div>
+                    <div class="header_homeikon_burgermenu">
+                        <a href="#" ><img class="home_knap" src="img_small/hjem-knap_black.png" alt="coop home knap"></a>
+                        <a href="#" ><img class="burgermenu" src="img_small/burgermenu.png" alt="coop burgermenu"></a>
+                    </div>
                 </header>
+                <br /><br />
                 <main id="main_content">
-                    <h1>Tilbud</h1><br />
-                    <button type="button" onclick="go_to_content('main_content', 'main_scan')">Monster Scan</button><br /><br />
-                    <button type="button" onclick="">Indkøbsseddel</button><br /><br />
-                    <button type="button" onclick="">Lokationer</button><br /><br />
-                    <button type="button" onclick="">Nyheder</button><br /><br />
-                    <button type="button" onclick="logout()">Log af</button><br /><br />
+                    <button class="tilbud" type="button" onclick="">Tilbud</button><br /><br />
+                    <button class="monster_scan"type="button" onclick="go_to_content('main_content', 'main_scan')">Monster Scan</button><br /><br />
+                    <button class="kurv" type="button" onclick="">Indkøbskurv</button><br /><br />
+                    <button class="butikker" type="button" onclick="">Butikker</button><br /><br />
+                    <button class="nyheder" type="button" onclick="">Nyheder</button><br /><br />
+                    <button class="login" type="button" onclick="logout()">Log af</button><br /><br />
                 </main>
                 <main id="main_scan">
                     <h1>Monster main_scan</h1><br />
@@ -58,8 +60,14 @@
                     <button type="button" onclick="">Indstilinger</button><br /><br />
                     <button type="button" onclick="go_to_content('main_scan', 'main_content')">Tilbage</button><br /><br />
                 </main>
-
-                <footer>COOP FOOTER</footer>
+                <footer>    
+                    <div class="footer_store_ikoner">    
+                        <a href="#" ><img class="footer_store" src="img/store-symbol.png" alt="butik ikon"></a>
+                    </div>   
+                    <div class="footer_kurv_ikoner">    
+                        <a href="#" ><img class="footer_kurv" src="img/cart-symbol.png" alt="indkøbskurv"></a>
+                    </div>                                 
+                </footer> 
             </div>
         </main>
     </body>

@@ -1,5 +1,5 @@
 function login(email, password){
-    if(email=="edna@valter.dk" && password=="1234"){
+    if(email=="" && password==""){
         document.getElementById("login_page").style.display = "none";
         document.getElementById("home_page").style.display = "block";
     }else{
@@ -11,8 +11,6 @@ function go_to_opret_bruger(){
     document.getElementById("login_page").style.display = "none";
     document.getElementById("opret_bruger").style.display = "block";
 }
-
-
 
 function OpretBruger(firstname, lastname, email, password){
     if(firstname=="Anton" && lastname=="Wich"){
@@ -30,7 +28,7 @@ function logout(){
 }
 
 function go_to_content(current_content_name, new_content_name){
-    document.getElementById(current_content_name).style.display = "none";
-    document.getElementById(new_content_name).style.display = "block";
+    //document.getElementById(current_content_name).style.display = "none";
+   // document.getElementById(new_content_name).style.display = "block";
 
 }

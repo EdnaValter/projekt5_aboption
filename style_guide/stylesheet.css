@@ -14,7 +14,7 @@ body {
 .main_content {
     height: 100%;
     margin: auto;
-    max-width: 1024px;
+
 }
 /* flex box container til coop style guide*/
 /*
@@ -155,14 +155,11 @@ nav li.afstand{
 /*Coop footer*/
 footer{
     background-color: #8C1419;
-    margin-top: 20px;
-    box-shadow: 0 -8px 10px -8px #4E535D;
-    height: 50px;
-    position: absolute;
-    left: 0px;
-    top: 150px;
+
+    /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 footer.footer_store {
     width: 50%;
@@ -170,13 +167,18 @@ footer.footer_store {
 footer.footer_kurv {
     width: 50%;
 }
-.footer_store {
+img.footer_store {
+    height: 100px;
+    width: auto;
+    float: left;
+}
+/*.footer_store {
     width: 70px;
     height: 90px;
-}
+}*/
 .footer_kurv {
-    width: 150px;
-    height: 60px;
+    width: 100px;
+    height: auto;
 }
 
  /* DESKTOP */
@@ -221,33 +223,24 @@ footer.footer_kurv {
     footer {
         background-color: #8C1419;
         clear: both;
-        position: relative;
-        height: 65px;
-        margin-top: -65px;
+        /*position: relative;*/
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     img.footer_store {
-        width: 90px;
+        height: 100px;
+        width: auto;
         float: left;
-        /*margin-left: 100px;*/
     }
     img.footer_kurv {
-        height: 90px;
-        width: 80px;
+        height: 100px;
+        width: auto;
         float: right;
-        /*margin-right: 100px;*/
     }
     .valgbutik {
         font-size: 40px;
         color: #c90a11;
         margin-bottom: 10px;
-    }
-    img.footer_kurv {
-        height: 70px;
-        width: 60px;
-        float: right;
-        margin-right: 50px;
     }
     img.scanner, img.butter, img.cow {
         height: 300px;
@@ -365,24 +358,19 @@ footer.footer_kurv {
 footer {
     background-color: #8C1419;
     clear: both;
-    position: relative;
-    height: 65px;
-    margin-top: -65px;
-    width: 100%;
+    /*position: relative;*/
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 img.footer_store {
-    width: 75px;
-    height: 75px;
+    height: 100px;
+    width: auto;
     float: left;
-    /*margin-left: 50px;*/
 }
 img.footer_kurv {
-    height: 70px;
-    width: 60px;
+    height: 100px;
+    width: auto;
     float: right;
-    /*margin-right: 50px;*/
 }
 /*Find Varer*/
 img.butter {

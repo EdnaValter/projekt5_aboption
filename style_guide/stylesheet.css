@@ -154,12 +154,15 @@ nav li.afstand{
 
 /*Coop footer*/
 footer{
+    background-color: #8C1419;
     margin-top: 20px;
     box-shadow: 0 -8px 10px -8px #4E535D;
     height: 50px;
     position: absolute;
     left: 0px;
     top: 150px;
+    display: flex;
+    justify-content: space-between;
 }
 footer.footer_store {
     width: 50%;
@@ -216,21 +219,24 @@ footer.footer_kurv {
         margin-right: 20px;
     }
     footer {
+        background-color: #8C1419;
         clear: both;
         position: relative;
         height: 65px;
         margin-top: -65px;
+        display: flex;
+        justify-content: space-between;
     }
     img.footer_store {
         width: 90px;
         float: left;
-        margin-left: 100px;
+        /*margin-left: 100px;*/
     }
     img.footer_kurv {
         height: 90px;
         width: 80px;
         float: right;
-        margin-right: 100px;
+        /*margin-right: 100px;*/
     }
     .valgbutik {
         font-size: 40px;
@@ -357,23 +363,26 @@ footer.footer_kurv {
 }
 /*Footer ikoner*/
 footer {
+    background-color: #8C1419;
     clear: both;
     position: relative;
     height: 65px;
     margin-top: -65px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 img.footer_store {
     width: 75px;
     height: 75px;
     float: left;
-    margin-left: 50px;
+    /*margin-left: 50px;*/
 }
 img.footer_kurv {
     height: 70px;
     width: 60px;
     float: right;
-    margin-right: 50px;
+    /*margin-right: 50px;*/
 }
 /*Find Varer*/
 img.butter {

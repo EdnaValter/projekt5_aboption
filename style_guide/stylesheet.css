@@ -28,28 +28,34 @@ article.flex_container > section {
 }
 /*Header style*/
 header{
-    box-shadow: 0 8px 10px -8px #4E535D;
-    height: 50px;
+    /*box-shadow: 0 8px 10px -8px #4E535D;
+    height: 50px;*/
+    background-color: #8C1419;
+
+    /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
 }
-header.header_logo {
-    width: 60%;
+div.header_logo {
+    display: flex;
+    align-items: center;
 }
 img.cooplogo {
-    width: 150px;
-    height: 60px;
-    float: left;
+    max-width: 10rem;
+    height: auto;
 }
 header.header_homeikon_burgermenu {
-    width: 40%;
-    float: right;
+
 }
 img.home_knap {
     height: 100px;
     width: 100px;
 }
 img.burgermenu {
-    height: 100px;
-    width: 100px;
+    max-width: 4rem;
 
 }
 /*Coop Menu*/
@@ -191,12 +197,18 @@ img.footer_ikoner {
  /* DESKTOP */
 @media screen and (min-width: 1024px) {
     header {
-        display: block;
+        /*display: block;*/
+        background-color: #8C1419;
+
+        /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1rem;
     }
     .header_homeikon_burgermenu {
-        width: 40%;
-        float:right;
-        margin-right: 20px;
+
     }
     .menu {
         display: flex;
@@ -214,18 +226,24 @@ img.footer_ikoner {
  @media screen and (min-width: 768px) {
     /* flex box container til coop style guide*/
     header{
-        box-shadow: 0 8px 10px -8px #4E535D;
-        height: 50px;
+        /*box-shadow: 0 8px 10px -8px #4E535D;
+        height: 50px;*/
+        background-color: #8C1419;
+
+        /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1rem;
     }
     }
     img.cooplogo {
-        width: 200px;
-        height: 80px;
+      max-width: 10rem;
+      height: auto;
     }
     .header_homeikon_burgermenu {
-        width: 40%;
-        float:right;
-        margin-right: 20px;
+
     }
     footer{
         background-color: #8C1419;
@@ -287,29 +305,40 @@ img.footer_ikoner {
     }
     /*header css starts here*/
     header {
-        height: 65px;
+        /*height: 65px;*/
+        background-color: #8C1419;
+
+        /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1rem;
   }
     .header_logo {
-        width: 40%;
-        float: left;
+/*        width: 40%;
+        float: left;*/
+            width: 100px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
     }
     img.cooplogo {
-        width: 150px;
-        height: 60px;
+        max-width: 10rem;
+        height: auto;
     }
 
     .header_homeikon_burgermenu {
-        width: 40%;
-        float:right;
+
     }
     img.home_knap {
        width: 60px;
        height: 60px;
     }
     img.burgermenu {
-        width: 50px;
-        height: 50px;
-        padding-left: 10px;
+      max-width: 4rem;
+      height: auto;
      }
     /*nav css starts here*/
     .menu{

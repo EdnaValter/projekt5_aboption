@@ -11,23 +11,12 @@
 body {
   height: 100%;
   width: 100%;
- 
 }
 .main_container {
   height: 100%;
   margin: auto;
-  max-width: 1024px;
 }
-/* flex box container til coop style guide*/
-/*
-article.flex_container > section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  min-height: 80%;
-  min-width: 80%;
-  text-align: center;
-}*/
+/* Never ever touch this id's*/
 #home_page {
   display: none;
 }
@@ -46,6 +35,7 @@ article.flex_container > section {
   font-size: 20px;
   font-weight: bold;
   width: 250px;
+  text-align: left;
 }
 button.login, button.opretbruger, input.opretbruger{
   background-color: #c90a11;
@@ -59,33 +49,51 @@ button.login, button.opretbruger, input.opretbruger{
 button.opretbruger {
   width: 200px;
 }
-
-/*Header style*/
-header{
-    box-shadow: 0 8px 10px -8px #4E535D;
-    height: 50px;
+#login_page.cooplogored {
+    text-align: center;
 }
-header.header_logo {
-    width: 60%;
+.vilkår {
+    text-decoration: underline;
+}
+.opret_bruger, img.black_arrow {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 120px;
+  }
+img.black_arrow {
+    height: 80px;
+    width: 80px;   
+    
+}
+/*Header Style*/
+
+header{
+    /*box-shadow: 0 8px 10px -8px #4E535D;
+    height: 50px;*/
+    background-color: #8C1419;
+    /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+div.header_logo {
+    display: flex;
+    align-items: center;
 }
 img.cooplogo {
-    width: 150px;
-    height: 60px;
-    float: left;
-}
-header.header_homeikon_burgermenu {
-    width: 40%;
-    float: right;
+    max-width: 10rem;
+    height: auto;
 }
 img.home_knap {
     height: 100px;
     width: 100px;
 }
 img.burgermenu {
-    height: 100px;
-    width: 100px;
-
-}
+  max-width: 4rem;
+ }
 /*Coop Menu*/
 .main_content {
     width: 100%;
@@ -169,39 +177,55 @@ nav li.afstand{
   background-color: #FFF;
 }
 
+
+
 /*Coop footer*/
 footer{
-    margin-top: 20px;
-    box-shadow: 0 -8px 10px -8px #4E535D;
-    height: 50px;
-    position: absolute;
-    left: 0px;
-    top: 150px;
+    background-color: #8C1419;
+    /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem;
 }
-footer.footer_store {
-    width: 50%;
+.footer_ikoner_tekst{
+  display: inline-flex;
+
 }
-footer.footer_kurv {
-    width: 50%;
+img.footer_ikoner {
+    height: 100px;
+    width: auto;
+    float: left;
 }
-.footer_store {
-    width: 70px;
-    height: 90px;
+.footer_ikoner {
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.footer_kurv {
-    width: 150px;
-    height: 60px;
+.footer_grid {
+    text-decoration: none;
+    color: #FFF;
+    display: grid;
+  }
+a:hover{
+  text-decoration: underline;
 }
 
  /* DESKTOP */
 @media screen and (min-width: 1024px) {
     header {
-        display: block;
-    }
-    .header_homeikon_burgermenu {
-        width: 40%;
-        float:right;
-        margin-right: 20px;
+        /*display: block;*/
+        background-color: #8C1419;
+
+        /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1rem;
     }
 
     .valgbutik {
@@ -215,53 +239,51 @@ footer.footer_kurv {
 
 }
 
+
  /* iPad */
  @media screen and (min-width: 768px) {
-      .main_content {
-        text-align: center;
-        margin-top: 20px;
-    }
-    header, footer {
-        display: block;
-        width: 100%;
-        height: 100px;
+    header{
+        /*box-shadow: 0 8px 10px -8px #4E535D;
+        height: 50px;*/
+        background-color: #8C1419;
+
+        /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1rem;
     }
     img.cooplogo {
-        width: 200px;
-        height: 80px;
+      max-width: 10rem;
+      height: auto;
     }
-    .header_homeikon_burgermenu {
-        width: 40%;
-        float:right;
-        margin-right: 20px;
-    }
-    footer {
-        clear: both;
+
+    footer{
+        background-color: #8C1419;
+
+        /*box-shadow: 0 -8px 10px -8px #4E535D;*/
         position: relative;
-        height: 65px;
-        margin-top: -65px;
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
     }
-    img.footer_store {
-        width: 90px;
+    img.footer_ikoner {
+        height: 100px;
+        width: auto;
         float: left;
-        margin-left: 100px;
     }
-    img.footer_kurv {
-        height: 90px;
-        width: 90px;
-        float: right;
-        margin-right: 100px;
+    .footer_ikoner {
+        width: 100px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .valgbutik {
         font-size: 40px;
         color: #c90a11;
         margin-bottom: 10px;
-    }
-    img.footer_kurv {
-        height: 70px;
-        width: 60px;
-        float: right;
-        margin-right: 50px;
     }
     img.scanner, img.butter, img.cow {
         height: 300px;
@@ -291,39 +313,32 @@ footer.footer_kurv {
 }
  /* Mobiles */
 @media screen and (max-width: 568px) {
-    article.flex_container {
-        max-width: 568px;
-        height: 100%;
-    }
     .main_content {
         margin: auto;
     }
-    /*header css starts here*/
     header {
-        height: 65px;
+        /*height: 65px;*/
+        background-color: #8C1419;
+
+        /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1rem;
   }
     .header_logo {
         width: 40%;
         float: left;
     }
     img.cooplogo {
-        width: 150px;
-        height: 60px;
-    }
-
-    .header_homeikon_burgermenu {
-        width: 40%;
-        float:right;
-    }
-    img.home_knap {
-       width: 60px;
-       height: 60px;
+        max-width: 10rem;
+        height: auto;
     }
     img.burgermenu {
-        width: 50px;
-        height: 50px;
-        padding-left: 10px;
-     }
+        max-width: 4rem;
+        height: auto;
+       }
     /*Menu starts here*/
    .tilbud, .monster_scan, .kurv, .butikker, .nyheder {
         text-decoration: none;
@@ -358,25 +373,34 @@ footer.footer_kurv {
     height: 90px;
 }
 /*Footer ikoner*/
-footer {
-    clear: both;
+footer{
+    background-color: #8C1419;
+    /*box-shadow: 0 -8px 10px -8px #4E535D;*/
     position: relative;
-    height: 65px;
-    margin-top: -65px;
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem;
 }
-img.footer_store {
-    width: 75px;
-    height: 75px;
+img.footer_ikoner {
+    height: 60px;
+    width: auto;
     float: left;
-    margin-left: 50px;
 }
-img.footer_kurv {
-    height: 70px;
-    width: 70px;
-    float: right;
-    margin-right: 50px;
+.footer_ikoner {
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.footer_grid {
+    text-decoration: none;
+    color: #FFF;
+    display: grid;
+    font-size: 0.7rem;
+  }
+
 /*Find Varer*/
 img.butter {
     width: 150px;
@@ -402,7 +426,7 @@ a.next {
 a {
     text-decoration: none;
   }
-  h1 {
+h1 {
       font-size: 50px;
   }
 }

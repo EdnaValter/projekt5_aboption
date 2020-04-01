@@ -13,7 +13,7 @@
     <body>
         <main class="main_container">
             <div id="login_page">
-                <a href="index.html"><img src="img_small/cooplogo_red.png" alt="coop logo"></a>
+                <a href="index.html"><img class="cooplogored" src="img_small/cooplogo_red.png" alt="coop logo red"></a>
                 <h2 class="valgbutik">Login til Coop</h2><br />
                 <input type="email" id="email" placeholder="Email"/><br />
                 <input type="password" id="password" placeholder="Kodeord"/><br />
@@ -21,6 +21,7 @@
                 <button class="login" type="button" onclick="login(document.getElementById('email').value, document.getElementById('password').value)">Login</button>
                 <p>Eller</p>
                 <button class="opretbruger" type="button" onclick="go_to_opret_bruger()">Opret Bruger</button>
+                <p><a class="vilkår" href="https://shopping.coop.dk/coopdk/vilkaar">Privatsvilkår</a></p>
             </div>
             <div id="opret_bruger">
                 <a href="index.html"><img src="img_small/cooplogo_red.png" alt="coop logo"></a>
@@ -32,15 +33,15 @@
                     <input type="text" id="opret_password" name="opret_password" placeholder="Kodeord"><br><br>
                     <input class="opretbruger" type="button" value="Opret" onclick="OpretBruger(document.getElementById('firstname').value, document.getElementById('lastname').value, document.getElementById('opret_email').value, document.getElementById('opret_password').value)">
                 </form>
+                <a href="index.html"><img class="black_arrow" src="img/back-arrow.png" alt=""></a>
             </div>
             <div id="home_page">
                 <header>
                     <div class="header_logo">
-                        <a href="#" ><img class="cooplogo" src="img_small/cooplogo_red.png" alt="coop logo"></a>
+                        <a href="#" ><img class="cooplogo" src="img_small/cooplogo.png" alt="coop logo"></a>
                     </div>
                     <div class="header_homeikon_burgermenu">
-                        <a href="#" ><img class="home_knap" src="img_small/hjem-knap_black.png" alt="coop home knap"></a>
-                        <a href="#" ><img class="burgermenu" src="img_small/burgermenu.png" alt="coop burgermenu"></a>
+                        <a href="#" ><img class="burgermenu" src="img_small/burgermenui.png" alt="coop burgermenu"></a>
                     </div>
                 </header>
                 <br /><br />
@@ -61,11 +62,20 @@
                     <button type="button" onclick="go_to_content('main_scan', 'main_content')">Tilbage</button><br /><br />
                 </main>
                 <footer>
-                    <div class="footer_store_ikoner">
-                        <a href="#" ><img class="footer_store" src="img/store-symbol.png" alt="butik ikon"></a>
+                    <div class="footer_ikoner_tekst">
+                        <a class="footer_grid" href="#" ><img class="footer_ikoner" src="img_small/tilbudikon.png" alt="tilbud ikon">Tilbud</a>
                     </div>
-                    <div class="footer_kurv_ikoner">
-                        <a href="#" ><img class="footer_kurv" src="img/cart-symbol.png" alt="indkøbskurv"></a>
+                    <div class="footer_ikoner_tekst">
+                        <a class="footer_grid" href="#" ><img class="footer_ikoner" src="img_small/hjem-knap.png" alt="hjem">Monster Scan</a>
+                    </div>
+                    <div class="footer_ikoner_tekst">
+                        <a class="footer_grid" href="#" ><img class="footer_ikoner" src="img_small/hjem-knap.png" alt="hjem">Hjem</a>
+                    </div>
+                    <div class="footer_ikoner_tekst">
+                        <a class="footer_grid" href="#" ><img class="footer_ikoner" src="img/store-symbol.png" alt="butik ikon">Butikker</a>
+                    </div>
+                    <div class="footer_ikoner_tekst">
+                        <a class="footer_grid" href="#" ><img class="footer_ikoner" src="img/clipboard-list-solid.png" alt="indkøbsseddel">Indkøbsliste</a>
                     </div>
                 </footer>
             </div>

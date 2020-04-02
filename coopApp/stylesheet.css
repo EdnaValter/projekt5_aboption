@@ -239,6 +239,10 @@ a:hover{
       font-size: 40px;
     }
 
+    h1 {
+      font-size: 50px;
+      font-family: 'Raleway', sans-serif;
+    }
 }
 
 
@@ -308,7 +312,7 @@ a:hover{
         text-decoration: none;
       }
       h1 {
-          font-size: 50px;
+          font-size: 80px;
           text-decoration-color: #000;
       }
 
@@ -353,6 +357,10 @@ a:hover{
     .tilbud {
         font-size: 40px;
   }
+    h1 {
+      font-size: 50px;
+      font-family: 'Raleway', sans-serif;
+    }
 
 /*Coop Butikker Menu*/
 
@@ -429,6 +437,8 @@ a {
     text-decoration: none;
   }
 h1 {
-      font-size: 50px;
+      font-size: 75px;
+      font-family: 'Raleway', sans-serif;
+      color: #000;
   }
 }

@@ -103,7 +103,7 @@ img.burgermenu {
 .tilbud {
     font-size: 40px;
 }
-.tilbud, .monster_scan, .kurv, .butikker, .nyheder {
+.tilbud, .monster_scan, .seddel, .lokationer {
     color: #efefef;
     line-height: 80px;
     font-size: 25px;
@@ -309,6 +309,9 @@ a:hover{
           font-size: 50px;
           text-decoration-color: #000;
       }
+      .tilbud {
+        font-size: 40px;
+  }
 
 }
  /* Mobiles */
@@ -340,7 +343,7 @@ a:hover{
         height: auto;
        }
     /*Menu starts here*/
-   .tilbud, .monster_scan, .kurv, .butikker, .nyheder {
+   .tilbud, .monster_scan, .seddel, .lokationer {
         text-decoration: none;
         color: #efefef;
         margin: 10px;

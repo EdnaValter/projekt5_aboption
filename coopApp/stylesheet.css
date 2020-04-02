@@ -26,6 +26,16 @@ body {
 #opret_bruger {
   display: none;
 }
+#find_vare {
+  display: none;
+  /*background-image: url("img/family.jpg");
+  background-position: top;
+  background-size: contain;
+  opacity: 1px;*/
+}
+#quiz {
+  display: none;
+}
 /*Login style og Opret Bruger*/
 #email, #password, #firstname, #lastname, #opret_email, #opret_password {
   box-shadow: 0 8px 10px -8px #4E535D;
@@ -38,7 +48,7 @@ body {
   text-align: left;
 }
 button.login, button.opretbruger, input.opretbruger{
-  background-color: #c90a11;
+  background-color: #8C1419;
   margin: 20px;
   border-radius: 10px;
   height: 50px;
@@ -104,12 +114,12 @@ img.burgermenu {
 .tilbud {
     font-size: 40px;
 }
-.tilbud, .monster_scan, .seddel, .lokationer {
+.tilbud, .tilbud_side, button.scan_side, button.scan_side_start {
     color: #efefef;
     line-height: 80px;
     font-size: 25px;
     font-weight: bold;
-    background-color: #c90a11;
+    background-color: #8C1419;
     margin: 20px;
     border-radius: 10px;
     width: 250px;
@@ -221,7 +231,6 @@ a:hover{
     header {
         /*display: block;*/
         background-color: #8C1419;
-
         /*box-shadow: 0 -8px 10px -8px #4E535D;*/
         position: relative;
         display: flex;
@@ -232,7 +241,7 @@ a:hover{
 
     .valgbutik {
         font-size: 40px;
-        color: #c90a11;
+        color: #8C1419;
         margin-bottom: 10px;
     }
     .tilbud{
@@ -248,11 +257,14 @@ a:hover{
 
  /* iPad */
  @media screen and (min-width: 768px) {
+    .main_container {
+      height: 100%;
+      margin: auto;
+    }
     header{
         /*box-shadow: 0 8px 10px -8px #4E535D;
         height: 50px;*/
         background-color: #8C1419;
-
         /*box-shadow: 0 -8px 10px -8px #4E535D;*/
         position: relative;
         display: flex;
@@ -267,7 +279,6 @@ a:hover{
 
     footer{
         background-color: #8C1419;
-
         /*box-shadow: 0 -8px 10px -8px #4E535D;*/
         position: relative;
         display: flex;
@@ -288,7 +299,7 @@ a:hover{
     }
     .valgbutik {
         font-size: 40px;
-        color: #c90a11;
+        color: #8C1419;
         margin-bottom: 10px;
     }
     img.scanner, img.butter, img.cow {
@@ -308,33 +319,48 @@ a:hover{
         font-size: 25px;
         font-weight: bold;
       }
-    a {
-        text-decoration: none;
+  a {
+    text-decoration: none;
       }
-      h1 {
-          font-size: 80px;
-          text-decoration-color: #000;
+  h1 {
+    font-size: 80px;
+    text-decoration-color: #000;
       }
-      .tilbud {
-        font-size: 40px;
+  .tilbud {
+    font-size: 40px;
+  }
+  button.scan_side_start {
+    font-size: 40px;
+  }
+  .h2 {
+    font-size: 40px;
+  }
+  button.scanner {
+    width: 250px;
+    height: 130px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
 }
  /* Mobiles */
 @media screen and (max-width: 568px) {
-    .main_content {
-        margin: auto;
-    }
-    header {
-        /*height: 65px;*/
-        background-color: #8C1419;
-
-        /*box-shadow: 0 -8px 10px -8px #4E535D;*/
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 1rem;
+  .main_container {
+    height: 100%;
+    margin: auto;
+  }
+  .main_content {
+    margin: auto;
+  }
+  header {
+    /*height: 65px;*/
+    background-color: #8C1419;
+    /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
   }
     .header_logo {
         width: 40%;
@@ -349,20 +375,20 @@ a:hover{
         height: auto;
        }
     /*Menu starts here*/
-   .tilbud, .monster_scan, .seddel, .lokationer {
-        text-decoration: none;
-        color: #efefef;
-        margin: 10px;
-        line-height: 80px;
-        font-size: 25px;
-        font-weight: bold;
+.tilbud, .tilbud_side, {
+    text-decoration: none;
+    color: #efefef;
+    margin: 10px;
+    line-height: 80px;
+    font-size: 25px;
+    font-weight: bold;
     }
-    .tilbud {
-        font-size: 40px;
+.tilbud {
+    font-size: 40px;
   }
-    h1 {
-      font-size: 50px;
-      font-family: 'Raleway', sans-serif;
+h1 {
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
     }
 
 /*Coop Butikker Menu*/
@@ -374,7 +400,7 @@ a:hover{
 }
 .valgbutik {
     font-size: 40px;
-    color: #c90a11;
+    color: #8C1419;
     margin-bottom: 10px;
 }
 .brugsenlogo, .superbrugsenlogo, .kvicklylogo, .dagliglogo, .irmalogo {
@@ -385,6 +411,22 @@ a:hover{
     width: 210px;
     height: 90px;
 }
+/*Scan Start Side*/
+button.scan_side, button.scan_side_start {
+  color: #efefef;
+  line-height: 80px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #8C1419;
+  margin: 20px;
+  border-radius: 10px;
+  width: 250px;
+  outline: none;
+}
+button.scan_side_start {
+  font-size: 40px;
+}
+
 /*Footer ikoner*/
 footer{
     background-color: #8C1419;
@@ -419,10 +461,7 @@ img.butter {
     width: 150px;
     height: 130px;
 }
-img.cow, img.scanner {
-    width: 150px;
-    height: 130px;
-}
+
 .grey_tekst {
     font-size: 40px;
     color: #4E535D;
@@ -440,8 +479,43 @@ a {
     text-decoration: none;
   }
 h1 {
-      font-size: 75px;
-      font-family: 'Raleway', sans-serif;
-      color: #000;
+    font-size: 75px;
+    font-family: 'Raleway', sans-serif;
+    color: #000;
   }
+  .h2 {
+    font-size: 40px;
+  }
+  button.scanner {
+    width: 250px;
+    height: 130px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  img.black_arrow {
+    height: 80px;
+    width: 80px;
+
+}
+/*Footer ikoner*/
+div.quiz{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+img.quiz_butter_answer {
+  height: 100px;
+  width: auto;
+  float: left;
+}
+.quiz_butter {
+  width: 100px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 }

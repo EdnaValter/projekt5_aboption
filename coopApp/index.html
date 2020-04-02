@@ -13,7 +13,7 @@
     <body>
         <main class="main_container">
             <div id="login_page">
-                <a href="index.html"><img class="cooplogored" src="img_small/cooplogo_red.png" alt="coop logo red"></a>
+                <a href="index.html"><img class="cooplogored" src="img_small/cooplogo_darkred.png" alt="coop logo red"></a>
                 <h2 class="valgbutik">Login til Coop</h2><br />
                 <input type="email" id="email" placeholder="Email"/><br />
                 <input type="password" id="password" placeholder="Kodeord"/><br />
@@ -47,34 +47,46 @@
                 <br /><br />
                 <main id="main_content">
                     <button class="tilbud" type="button" onclick="window.location.href = 'tilbud.html';">Tilbud</button><br /><br />
-                    <button class="monster_scan"type="button" onclick="go_to_content('main_content', 'main_scan')">Monster Scan</button><br /><br />
-                    <button class="seddel" type="button" onclick="">Indkøbsseddel</button><br /><br />
-                    <button class="lokationer" type="button" onclick="">Lokationer</button><br /><br />
+                    <button class="tilbud_side" type="button" onclick="go_to_content('main_content', 'main_scan')">Monster Scan</button><br /><br />
+                    <button class="tilbud_side" type="button" onclick="window.location.href='indkøbsseddel.html';">Indkøbsseddel</button><br /><br />
+                    <button class="tilbud_side" type="button" onclick="">Lokationer</button><br /><br />
                     <button class="login" type="button" onclick="logout()">Log af</button><br /><br />
                 </main>
                 <main id="main_scan">
-                    <h1>Monster main_scan</h1><br />
-                    <button type="button" onclick="">Start</button><br /><br />
-                    <button type="button" onclick="">Indkøbsseddel</button><br /><br />
-                    <button type="button" onclick="">Samling</button><br /><br />
-                    <button type="button" onclick="">Indstilinger</button><br /><br />
-                    <button type="button" onclick="go_to_content('main_scan', 'main_content')">Tilbage</button><br /><br />
+                    <button class="scan_side_start" type="button" onclick="go_to_content('main_scan', 'find_vare')">Start</button><br /><br />
+                    <button class="scan_side" type="button" onclick="window.location.href='indkøbsseddel.html';">Indkøbsseddel</button><br /><br />
+                    <button class="scan_side" type="button" onclick="">Samling</button><br /><br />
+                    <button class="scan_side" type="button" onclick="">Præmier</button><br /><br />
+                    <!--<button class="scan_side" type="button" onclick="go_to_content('main_scan', 'main_content')">Tilbage</button><br /><br />-->
+                    <a href="index.html"><img class="black_arrow" src="img/back-arrow.png" alt=""></a>
+                </main>
+                <main id="find_vare">
+                    <h2 class="h2">Find</h2>
+                    <img src="img_small/butter.png" alt="smør billede"><br/><br/>
+                    <h2 class="h2">Scan vare</h2>
+                    <button class="scanner" type="submit" onclick="go_to_content('find_vare','quiz')"></button>
+                    <!--<button class="scan_side" type="button" onclick="go_to_content('main_scan', 'main_content')">Tilbage</button><br /><br />-->
+                </main>
+                <main id="quiz">
+                    <h3>Hvor kommer smør fra?</h3>
+                    <div class="quiz_butter">
+                        <a href=""><img class="quiz_butter_answer" src="img_small/mælk.png" alt=" mælk ">Mælk</a>
+                    </div>
+                    <div>
+                        <a href=""><img class="quiz_butter_answer" src="img_small/smør.png" alt=" smør ">Smør</a>
+                    </div><div>
+                        <a href=""><img class="quiz_butter_answer" src="img_small/hen.png" alt=" mælk ">Høne</a>
+                    </div><h4>sleeping time ZZZZZzzzzzZZzzzzz</h4>
                 </main>
                 <footer>
                     <div class="footer_ikoner_tekst">
-                        <a class="footer_grid" href="#" ><img class="footer_ikoner" src="img_small/tilbudikon-hvid.png" alt="tilbud ikon">Tilbud</a>
+                        <a class="footer_grid" href="https://om.coop.dk/koncern/vores+butikker/ugens+tilbudsaviser.aspx" ><img class="footer_ikoner" src="img_small/tilbudikon-hvid.png" alt="tilbud ikon">Tilbud</a>
                     </div>
                     <div class="footer_ikoner_tekst">
-                        <a class="footer_grid" href="#" ><img class="footer_ikoner" src="img_small/hjem-knap.png" alt="hjem">Monster Scan</a>
+                        <a class="footer_grid" href="index.html" ><img class="footer_ikoner" src="img_small/hjem-knap.png" alt="hjem">Hjem</a>
                     </div>
                     <div class="footer_ikoner_tekst">
-                        <a class="footer_grid" href="#" ><img class="footer_ikoner" src="img_small/hjem-knap.png" alt="hjem">Hjem</a>
-                    </div>
-                    <div class="footer_ikoner_tekst">
-                        <a class="footer_grid" href="#" ><img class="footer_ikoner" src="img_small/store-symbol-no-outline.png" alt="butik ikon">Butikker</a>
-                    </div>
-                    <div class="footer_ikoner_tekst">
-                        <a class="footer_grid" href="#" ><img class="footer_ikoner" src="img_small/clipboard-list-solid-hvid.png" alt="indkøbsseddel">Indkøbsliste</a>
+                        <a class="footer_grid" href="indkøbsseddel.html" ><img class="footer_ikoner" src="img_small/clipboard-list-solid-hvid.png" alt="indkøbsseddel">Indkøbsliste</a>
                     </div>
                 </footer>
             </div>

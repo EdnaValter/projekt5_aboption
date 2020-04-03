@@ -2,15 +2,15 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="Style Guide">
-        <meta title="Coop style guide" content="HTML,CSS,XML,JavaScript">
+        <meta name="description" content="Coop App, spil til børnefamilier, find varer, scan varer">
+        <meta title="Coop Application" content="HTML,CSS,XML,JavaScript">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- css -->
         <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
-        <title>Coop &#8594; Style Guide</title>
+        <title>Coop App</title>
     </head>
     <body>
-        <main class="main_content">
+        <main class="main_container">
             <header>  
                 <div class="header_logo">
                     <a href="#" ><img class="cooplogo" src="img_small/cooplogo_red.png" alt="coop logo"></a>
@@ -20,32 +20,35 @@
                     <a href="#" ><img class="burgermenu" src="img_small/burgermenu.png" alt="coop burgermenu"></a>
                 </div>
             </header>
-            <article class="flex_container">
-                <div class="menu">
-                    <h1>Menu</h1>
-                    <nav>
-                        <ul>
-                            <div class="tilbud_stor">
-                                <li><a class="tilbud" href="tilbud.html">Tilbud</a></li>
-                            </div>
-                            <li><a class="monster_scan" href="monster_scan.html">Monster Scan</a></li>
-                            <li><a class="kurv" href="indkøbskurv.html">Indkøbskurv</a></li>
-                            <li><a class="butikker" href="butikker.html">Butikker</a></li>
-                            <li><a class="nyheder" href="nyheder.html">Nyheder</a></li>
-                        </ul>
-                    </nav>
-                    <div class="coop_butikker">
-                        <h1>Coops Butikker</h1>
-                        <h2 class="valgbutik">Vælg en butik</h2>         
-                            <a href="https://fakta.dk/" ><img class="faktalogo" src="img_small/FAKTA-en-del-af-coop.png" alt="fakta butik"></a>
-                            <a href="https://superbrugsen.dk/" ><img class="brugsenlogo" src="img_small/Brugsen1.png" alt="brugsen butik"></a>
-                            <a href="https://superbrugsen.dk/" ><img class="superbrugsenlogo" src="img_small/Coop_DAGLIBRUGSEN.png" alt="dagli brugsen butik"></a>
-                            <a href="https://superbrugsen.dk/" ><img class="dagliglogo" src="img_small/Coop_SUPERBRUGSEN.png" alt="super brugsen butik"></a>
-                            <a href="https://kvickly.dk/" ><img class="kvicklylogo" src="img_small/Coop_KVICKLY.png" alt="kvickly butik"></a>
-                            <a href="https://superbrugsen.dk/" ><img class="irmalogo" src="img_small/Irma.png" alt="fakta butik"></a>               
-                    </div>
+            <div id="home_page">
+                <br /><br />
+                <main id="main_content">
+                    <button class="tilbud" type="button" onclick="">Tilbud</button><br /><br />
+                    <button class="monster_scan"type="button" onclick="">Monster Scan</button><br /><br />
+                    <button class="kurv" type="button" onclick="">Indkøbskurv</button><br /><br />
+                    <button class="butikker" type="button" onclick="">Butikker</button><br /><br />
+                    <button class="nyheder" type="button" onclick="">Nyheder</button><br /><br />
+                    <button class="login" type="button" onclick="">Log af</button><br /><br />
+                </main>
+                <div class="coop_butikker">
+                    <h1>Coops Butikker</h1>
+                    <h2 class="valgbutik">Vælg en butik</h2>         
+                        <a href="https://fakta.dk/" ><img class="faktalogo" src="img_small/FAKTA-en-del-af-coop.png" alt="fakta butik"></a>
+                        <a href="https://superbrugsen.dk/" ><img class="brugsenlogo" src="img_small/Brugsen1.png" alt="brugsen butik"></a>
+                        <a href="https://superbrugsen.dk/" ><img class="superbrugsenlogo" src="img_small/Coop_DAGLIBRUGSEN.png" alt="dagli brugsen butik"></a>
+                        <a href="https://superbrugsen.dk/" ><img class="dagliglogo" src="img_small/Coop_SUPERBRUGSEN.png" alt="super brugsen butik"></a>
+                        <a href="https://kvickly.dk/" ><img class="kvicklylogo" src="img_small/Coop_KVICKLY.png" alt="kvickly butik"></a>
+                        <a href="https://superbrugsen.dk/" ><img class="irmalogo" src="img_small/Irma.png" alt="fakta butik"></a>               
                 </div>
-            </article> 
+                <main id="main_scan">
+                    <h1>Monster main_scan</h1><br />
+                    <button type="button" onclick="">Start</button><br /><br />
+                    <button type="button" onclick="">Indkøbsseddel</button><br /><br />
+                    <button type="button" onclick="">Samling</button><br /><br />
+                    <button type="button" onclick="">Indstilinger</button><br /><br />
+                    <button type="button" onclick="">Tilbage</button><br /><br />
+                </main>
+            </div> 
             <h1>Find Varer side</h1>
             <article class="flex_container">
                 <h2 class="valgbutik">Find:</h2>

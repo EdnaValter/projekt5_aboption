@@ -13,7 +13,7 @@ function go_to_opret_bruger(){
 }
 
 function OpretBruger(firstname, lastname, email, password){
-    if(firstname=="Anton" && lastname=="Wich"){
+    if(firstname=="Anton" && lastname=="Wich" && email=="anton@wich.dk" && password=="123"){
         document.getElementById("opret_bruger").style.display = "none";
         document.getElementById("home_page").style.display = "block";
         alert("Du blev oprettet");
@@ -28,7 +28,7 @@ function logout(){
 }
 
 function go_to_content(current_content_name, new_content_name){
-    //document.getElementById(current_content_name).style.display = "none";
-   // document.getElementById(new_content_name).style.display = "block";
+    document.getElementById(current_content_name).style.display = "none";
+   document.getElementById(new_content_name).style.display = "block";
 
 }

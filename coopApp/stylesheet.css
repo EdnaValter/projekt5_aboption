@@ -61,10 +61,14 @@ button.opretbruger {
   width: 200px;
 }
 #login_page.cooplogored {
-    text-align: center;
+  text-align: center;
 }
-.vilkår {
-    text-decoration: underline;
+a.vilkår {
+  text-decoration: underline;
+  color: #4E535D;
+}
+p.privatsvilkor {
+  margin-top: 50px;
 }
 .opret_bruger, img.black_arrow {
     position: absolute;
@@ -75,7 +79,9 @@ button.opretbruger {
 img.black_arrow {
     height: 80px;
     width: 80px;
-
+}
+p.vilkår {
+  margin-top: 20px;
 }
 /*Header Style*/
 
@@ -261,6 +267,9 @@ a:hover{
       height: 100%;
       margin: auto;
     }
+    p.privatsvilkor {
+      margin-top: 50px;
+    }
     header{
         /*box-shadow: 0 8px 10px -8px #4E535D;
         height: 50px;*/
@@ -351,6 +360,9 @@ a:hover{
   }
   .main_content {
     margin: auto;
+  }
+  p.privatsvilkor {
+    margin-top: 50px;
   }
   header {
     /*height: 65px;*/
@@ -495,7 +507,6 @@ h1 {
   img.black_arrow {
     height: 80px;
     width: 80px;
-
 }
 /*Footer ikoner*/
 div.quiz{
@@ -516,6 +527,5 @@ img.quiz_butter_answer {
   align-items: center;
   justify-content: center;
 }
-
 
 }

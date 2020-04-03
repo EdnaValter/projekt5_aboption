@@ -13,18 +13,18 @@
     <body>
         <main class="main_container">
             <div id="login_page">
-                <a href="index.html"><img class="cooplogored" src="img_small/cooplogo_darkred.png" alt="coop logo red"></a>
+                <a href="index.html"><img class="cooplogored" src="img_small/cooplogo_darkred.png" alt="coop logo darkred"></a>
                 <h2 class="valgbutik">Login til Coop</h2><br />
                 <input type="email" id="email" placeholder="Email"/><br />
                 <input type="password" id="password" placeholder="Kodeord"/><br />
                 <br />
                 <button class="login" type="button" onclick="login(document.getElementById('email').value, document.getElementById('password').value)">Login</button>
-                <p>Eller</p>
+                <p class="eller">Eller</p>
                 <button class="opretbruger" type="button" onclick="go_to_opret_bruger()">Opret Bruger</button>
-                <p><a class="vilkår" href="https://shopping.coop.dk/coopdk/vilkaar">Privatsvilkår</a></p>
+                <p class="privatsvilkor"><a class="vilkår" href="https://shopping.coop.dk/coopdk/vilkaar">Privatsvilkår</a></p>
             </div>
             <div id="opret_bruger">
-                <a href="index.html"><img src="img_small/cooplogo_red.png" alt="coop logo"></a>
+                <a href="index.html"><img class="cooplogored" src="img_small/cooplogo_darkred.png" alt="coop logo darkred"></a>
                 <h2 class="valgbutik">Opret Bruger</h2>
                 <form action="">
                     <input type="text" id="firstname" name="firstname" placeholder="Fornavn"><br><br>
@@ -47,13 +47,13 @@
                 <br /><br />
                 <main id="main_content">
                     <button class="tilbud" type="button" onclick="window.location.href = 'tilbud.html';">Tilbud</button><br /><br />
-                    <button class="tilbud_side" type="button" onclick="go_to_content('main_content', 'main_scan')">Monster Scan</button><br /><br />
+                    <button class="tilbud_side" type="button" onclick="go_to_content('main_content', 'main_scan')">Wonder Scan</button><br /><br />
                     <button class="tilbud_side" type="button" onclick="window.location.href='indkøbsseddel.html';">Indkøbsseddel</button><br /><br />
                     <button class="tilbud_side" type="button" onclick="">Lokationer</button><br /><br />
                     <button class="login" type="button" onclick="logout()">Log af</button><br /><br />
                 </main>
                 <main id="main_scan">
-                    <button class="scan_side_start" type="button" onclick="go_to_content('main_scan', 'find_vare')">Start</button><br /><br />
+                    <button class="scan_side_start" type="button" onclick="go_to_content('main_scan', 'find_vare')">Start Spil</button><br /><br />
                     <button class="scan_side" type="button" onclick="window.location.href='indkøbsseddel.html';">Indkøbsseddel</button><br /><br />
                     <button class="scan_side" type="button" onclick="">Samling</button><br /><br />
                     <button class="scan_side" type="button" onclick="">Præmier</button><br /><br />
@@ -74,10 +74,11 @@
                     </div>
                     <div>
                         <a href=""><img class="quiz_butter_answer" src="img_small/smør.png" alt=" smør ">Smør</a>
-                    </div><div>
+                    </div>
+                    <div>
                         <a href=""><img class="quiz_butter_answer" src="img_small/hen.png" alt=" mælk ">Høne</a>
-                    </div><h4>sleeping time ZZZZZzzzzzZZzzzzz</h4>
-                </main>
+                    </div>
+                </main>             
                 <footer>
                     <div class="footer_ikoner_tekst">
                         <a class="footer_grid" href="https://om.coop.dk/koncern/vores+butikker/ugens+tilbudsaviser.aspx" ><img class="footer_ikoner" src="img_small/tilbudikon-hvid.png" alt="tilbud ikon">Tilbud</a>

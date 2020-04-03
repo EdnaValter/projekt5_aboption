@@ -536,3 +536,8 @@ img.quiz_butter_answer {
 input[type=text]:focus {
   width: 100%;
 }
+.seddel i{
+  height: 16px;
+  margin-top: 12px;
+  margin-right: 4px;
+}

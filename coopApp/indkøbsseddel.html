@@ -9,9 +9,29 @@
         <title>COOP App</title>
         <link rel="stylesheet" href="stylesheet.css">
         <script src="javascript.js"></script>
+        <script src="https://kit.fontawesome.com/82ba04c2f3.js" crossorigin="anonymous"></script>
       </head>
   <body>
     <main class="main_container">
-      <h1>Her arbejder Matthis</h1>
+      <header>
+        <div class="header_logo">
+          <a href="#" ><img class="cooplogo" src="img_small/cooplogo.png" alt="coop logo"></a>
+        </div>
+      </header>
+      <br>
+      <h2 class="h2">Indkøbsseddel</h2 class="h2">
+        <div class="seddel">
+          <i class="fas fa-search"></i>
+          <input type="text" id="addToList" placeholder="Tilføj vare..">
+          <span onclick="newElement()" class="addBtn">Tilføj</span>
+        </div>
+        <ul id="shoppingList">
+  <li>Smør</li>
+  <li class="checked">Bananer</li>
+  <li>Æg</li>
+  <li>Mælk</li>
+  <li>Rugbrød</li>
+  <li>Appelsinjuice</li>
+        </ul>
     </main>
   </body>

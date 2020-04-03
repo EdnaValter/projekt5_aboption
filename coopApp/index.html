@@ -53,32 +53,53 @@
                     <button class="login" type="button" onclick="logout()">Log af</button><br /><br />
                 </main>
                 <main id="main_scan">
-                    <button class="scan_side_start" type="button" onclick="go_to_content('main_scan', 'find_vare')">Start Spil</button><br /><br />
+                    <button class="scan_side_start" type="button" onclick="go_to_content('main_scan', 'find_og_scan')">Start Spil</button><br /><br />
                     <button class="scan_side" type="button" onclick="window.location.href='indkøbsseddel.html';">Indkøbsseddel</button><br /><br />
                     <button class="scan_side" type="button" onclick="">Samling</button><br /><br />
                     <button class="scan_side" type="button" onclick="">Præmier</button><br /><br />
                     <!--<button class="scan_side" type="button" onclick="go_to_content('main_scan', 'main_content')">Tilbage</button><br /><br />-->
                     <a href="index.html"><img class="black_arrow" src="img/back-arrow.png" alt=""></a>
                 </main>
-                <main id="find_vare">
-                    <h2 class="h2">Find</h2>
+                <main id="find_og_scan">
+                    <h2 class="h2_find">Find</h2>
                     <img src="img_small/butter.png" alt="smør billede"><br/><br/>
-                    <h2 class="h2">Scan vare</h2>
-                    <button class="scanner" type="submit" onclick="go_to_content('find_vare','quiz')"></button>
+                    <h2 class="h2_scan">Scan vare</h2>
+                    <button class="scanner" type="submit" onclick="go_to_content('find_og_scan','quiz')"></button>
                     <!--<button class="scan_side" type="button" onclick="go_to_content('main_scan', 'main_content')">Tilbage</button><br /><br />-->
                 </main>
                 <main id="quiz">
-                    <h3>Hvor kommer smør fra?</h3>
+                    <h2 class="question">Hvor kommer smør fra?</h2>
                     <div class="quiz_butter">
-                        <a href=""><img class="quiz_butter_answer" src="img_small/mælk.png" alt=" mælk ">Mælk</a>
+                        <button class="svar_1" href="" onclick="go_to_content('quiz','award')"><img class="quiz_butter_answer" src="img_small/mælk.png" alt=" mælk ">Mælk</button>
                     </div>
-                    <div>
-                        <a href=""><img class="quiz_butter_answer" src="img_small/smør.png" alt=" smør ">Smør</a>
+                    <div class="quiz_butter">
+                        <button class="svar_1" onclick="go_to_content('no_award')"><img class="quiz_butter_answer" src="img_small/butter.png" alt=" smør ">Smør</button>
                     </div>
-                    <div>
-                        <a href=""><img class="quiz_butter_answer" src="img_small/hen.png" alt=" mælk ">Høne</a>
+                    <div class="quiz_butter">
+                        <button class="svar_1" onclick="go_to_content('no_award')"><img class="quiz_butter_answer" src="img_small/hen.png" alt=" mælk ">Høne</button>
                     </div>
-                </main>             
+                </main> 
+                <main id="award">
+                    <h2 class="question">Korrekt</h2>
+                    <h3>Vælg en præmie</h3>
+                    <div class="quiz_butter">
+                        <img class="quiz_butter_answer" src="img_small/gave.png" alt=" mælk ">
+                    </div>
+                    <div class="quiz_butter">
+                        <img class="quiz_butter_answer" src="img_small/gave.png" alt=" smør ">
+                    </div>
+                    <div class="quiz_butter">
+                        <button>
+                            <img class="quiz_butter_answer" src="img_small/gave.png" alt=" mælk ">
+                        </button>
+                    </div>
+                </main>   
+                <main id="no_award">
+                    <h2 class="question">Prøve igen</h2>
+                    <h3>Scan et nyt produkt</h3>
+                    <button type="submit" onclick="go_to_content('find_og_scan')">Næste½1½  ½</button>
+                    
+                </main>                          
                 <footer>
                     <div class="footer_ikoner_tekst">
                         <a class="footer_grid" href="https://om.coop.dk/koncern/vores+butikker/ugens+tilbudsaviser.aspx" ><img class="footer_ikoner" src="img_small/tilbudikon-hvid.png" alt="tilbud ikon">Tilbud</a>

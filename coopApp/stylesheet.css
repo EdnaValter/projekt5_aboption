@@ -516,3 +516,28 @@ img.quiz_butter_answer {
   align-items: center;
   justify-content: center;
 }
+.seddel, .seddel input[type=text] {
+    float: none;
+    display: flex;
+    margin: 0;
+    padding: 14px;
+    border-color: black;
+    justify-content: center;
+    border-radius: 5px;
+  }
+.seddel input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  border: 1px solid;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100%;
+}
+.seddel i{
+  height: 16px;
+  margin-top: 12px;
+  margin-right: 4px;
+}

@@ -26,15 +26,37 @@ body {
 #opret_bruger {
   display: none;
 }
-#find_vare {
+#find_og_scan {
   display: none;
-  /*background-image: url("img/family.jpg");
-  background-position: top;
-  background-size: contain;
-  opacity: 1px;*/
+  background-image: url('img_small/slot-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 640px;
+  width: auto;
 }
 #quiz {
   display: none;
+  max-width: 100%;
+  height: auto;
+}
+#award {
+  display: none;
+}
+#no_award {
+  display: none;
+}
+
+/*Quiz style*/
+.quiz_butter {
+  width: 30%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img.quiz_butter_answer {
+  height: 100px;
+  width: auto;
 }
 /*Login style og Opret Bruger*/
 #email, #password, #firstname, #lastname, #opret_email, #opret_password {
@@ -61,10 +83,14 @@ button.opretbruger {
   width: 200px;
 }
 #login_page.cooplogored {
-    text-align: center;
+  text-align: center;
 }
-.vilkår {
-    text-decoration: underline;
+a.vilkår {
+  text-decoration: underline;
+  color: #4E535D;
+}
+p.privatsvilkor {
+  margin-top: 50px;
 }
 .opret_bruger, img.black_arrow {
     position: absolute;
@@ -75,7 +101,9 @@ button.opretbruger {
 img.black_arrow {
     height: 80px;
     width: 80px;
-
+}
+p.vilkår {
+  margin-top: 20px;
 }
 /*Header Style*/
 
@@ -199,7 +227,7 @@ footer{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding: 0.3rem;
 }
 .footer_ikoner_tekst{
   display: inline-flex;
@@ -236,7 +264,7 @@ a:hover{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 1rem;
+        padding: 0.3rem;
     }
 
     .valgbutik {
@@ -261,6 +289,9 @@ a:hover{
       height: 100%;
       margin: auto;
     }
+    p.privatsvilkor {
+      margin-top: 50px;
+    }
     header{
         /*box-shadow: 0 8px 10px -8px #4E535D;
         height: 50px;*/
@@ -270,7 +301,7 @@ a:hover{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 1rem;
+        padding: 0.3rem;
     }
     img.cooplogo {
       max-width: 10rem;
@@ -283,7 +314,7 @@ a:hover{
         position: relative;
         display: flex;
         justify-content: space-around;
-        padding: 1rem;
+        padding: 0.3rem;
     }
     img.footer_ikoner {
         height: 100px;
@@ -324,7 +355,7 @@ a:hover{
       }
   h1 {
     font-size: 50px;
-    text-decoration-color: #000;
+    color: #000;
       }
   .tilbud {
     font-size: 40px;
@@ -332,8 +363,13 @@ a:hover{
   button.scan_side_start {
     font-size: 40px;
   }
-  .h2 {
+  .h2_find {
     font-size: 40px;
+    color: #eee;
+  }
+  .h2_scan {
+    font-size: 40px;
+    color: #8C1419;
   }
   button.scanner {
     width: 250px;
@@ -352,6 +388,9 @@ a:hover{
   .main_content {
     margin: auto;
   }
+  p.privatsvilkor {
+    margin-top: 50px;
+  }
   header {
     /*height: 65px;*/
     background-color: #8C1419;
@@ -360,7 +399,7 @@ a:hover{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding: 0.3rem;
   }
     .header_logo {
         width: 40%;
@@ -435,7 +474,7 @@ footer{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding: 0.3rem;
 }
 img.footer_ikoner {
     height: 60px;
@@ -457,6 +496,14 @@ img.footer_ikoner {
   }
 
 /*Find Varer*/
+#find_og_scan {
+  display: none;
+  background-image: url('img_small/slot-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 640px;
+  width: auto;
+}
 img.butter {
     width: 150px;
     height: 130px;
@@ -483,38 +530,57 @@ h1 {
     font-family: 'Raleway', sans-serif;
     color: #000;
   }
-  .h2 {
+.h2 {
     font-size: 40px;
+  }
+  .h2_find {
+    font-size: 40px;
+    color: #eee;
+  }
+  .h2_scan {
+    font-size: 40px;
+    color: #eee;
+    background-color: #f44336;
+
   }
   button.scanner {
     width: 250px;
     height: 130px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    color: bisque;
+    opacity: 0.8;
   }
   img.black_arrow {
     height: 80px;
     width: 80px;
-
 }
-/*Footer ikoner*/
-div.quiz{
+/*Quiz style
+
+main#quiz{
+  max-width: 100%;
+  height: auto;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+}
+.quiz_butter {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  padding: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 img.quiz_butter_answer {
   height: 100px;
   width: auto;
-  float: left;
 }
-.quiz_butter {
-  width: 100px;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.svar_1{
+  display: inline-flex;
+}*/
+.question {
+  font-size: 30px;
 }
 .seddel, .seddel input[type=text] {
     float: none;
@@ -619,6 +685,16 @@ ul li.checked::before {
   clear: both;
 }
 
+/* Style the input (I made you a class Matthis so that the login page wouldn't be affected :D ) */
+.input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
 
 /* Style the "Add" button */
 .addBtn {

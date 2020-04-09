@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+.main_container {
+  height: 100%;
+  margin: auto;
+}
+/* Never ever touch this id's*/
+#home_page {
+  display: none;
+}
+#main_scan {
+  display: none;
+}
+#opret_bruger {
+  display: none;
+}
+#find_vare {
+  display: none;
+}
+#quiz {
+  display: none;
+}
+/*Login style og Opret Bruger*/
+#email, #password, #firstname, #lastname, #opret_email, #opret_password {
+  box-shadow: 0 8px 10px -8px #4E535D;
+  border: none;
+  height: 50px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 250px;
+  text-align: left;
+}
+button.login, button.opretbruger, input.opretbruger{
+  background-color: #8C1419;
+  margin: 20px;
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+  font-size: 20px;
+  color: #efefef;
+  outline: none;
+}
+button.opretbruger {
+  width: 200px;
+}
+#login_page.cooplogored {
+  text-align: center;
+}
+a.vilkår {
+  text-decoration: underline;
+  color: #4E535D;
+}
+p.privatsvilkor {
+  margin-top: 50px;
+}
+.opret_bruger, img.black_arrow {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 120px;
+  }
+img.black_arrow {
+    height: 80px;
+    width: 80px;
+}
+p.vilkår {
+  margin-top: 20px;
+}
+/*Header Style*/
+
+header{
+    /*box-shadow: 0 8px 10px -8px #4E535D;
+    height: 50px;*/
+    background-color: #8C1419;
+    /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+div.header_logo {
+    display: flex;
+    align-items: center;
+}
+img.cooplogo {
+    max-width: 10rem;
+    height: auto;
+}
+img.home_knap {
+    height: 100px;
+    width: 100px;
+}
+img.burgermenu {
+  max-width: 4rem;
+ }
+/*Coop Menu*/
+.main_content {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.tilbud {
+    font-size: 40px;
+}
+.tilbud, .tilbud_side, button.scan_side, button.scan_side_start {
+    color: #efefef;
+    line-height: 80px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #8C1419;
+    margin: 20px;
+    border-radius: 10px;
+    width: 250px;
+    outline: none;
+}
+.coop_butikker {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.coop_butikker, img {
+    padding: 10px;
+}
+
+/*inkøbsliste*/
+
+.soegefelt{
+  margin: 1em 0 1em 0em;
+  padding: 1em;
+  width: -webkit-fill-available;
+}
+
+#search{
+  display: flex;
+  height: 3em;
+}
+
+.search-icon{
+  width: 3em;
+}
+
+.butiktabel{
+    min-height: 300px;
+    max-width: 300px;
+}
+.naere_butikker {
+    border-style: solid;
+    border-width: thin;
+    border-bottom: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.butikliste {
+    border-style: solid;
+    border-width: thin;
+    margin: 0;
+
+    padding: 10px;
+}
+
+nav li.vaelgbutik{
+  background-color: #FFF;
+}
+
+.afstand_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .3em;
+    margin-top: .3em;
+}
+
+nav li.afstand{
+  background-color: #FFF;
+}
+
+
+
+/*Coop footer*/
+footer{
+    background-color: #8C1419;
+    /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.footer_ikoner_tekst{
+  display: inline-flex;
+
+}
+img.footer_ikoner {
+    height: 100px;
+    width: auto;
+    float: left;
+}
+.footer_ikoner {
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_grid {
+    text-decoration: none;
+    color: #FFF;
+    display: grid;
+  }
+a:hover{
+  text-decoration: underline;
+}
+
+ /* DESKTOP */
+@media screen and (min-width: 1024px) {
+    header {
+        /*display: block;*/
+        background-color: #8C1419;
+        /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .valgbutik {
+        font-size: 40px;
+        color: #8C1419;
+        margin-bottom: 10px;
+    }
+    .tilbud{
+      font-size: 40px;
+    }
+
+    h1 {
+      font-size: 50px;
+      font-family: 'Raleway', sans-serif;
+    }
+}
+
+
+ /* iPad */
+ @media screen and (min-width: 768px) {
+    .main_container {
+      height: 100%;
+      margin: auto;
+    }
+    p.privatsvilkor {
+      margin-top: 50px;
+    }
+    header{
+        /*box-shadow: 0 8px 10px -8px #4E535D;
+        height: 50px;*/
+        background-color: #8C1419;
+        /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    img.cooplogo {
+      max-width: 10rem;
+      height: auto;
+    }
+
+    footer{
+        background-color: #8C1419;
+        /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    img.footer_ikoner {
+        height: 100px;
+        width: auto;
+        float: left;
+    }
+    .footer_ikoner {
+        width: 100px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .valgbutik {
+        font-size: 40px;
+        color: #8C1419;
+        margin-bottom: 10px;
+    }
+    img.scanner, img.butter, img.cow {
+        height: 300px;
+        width: 300px;
+    }
+    .grey_tekst {
+        font-size: 40px;
+        color: #4E535D;
+        margin-bottom: 30px;
+    }
+    a.next {
+        margin-top: 100px;
+        border: 2px solid #4E535D;
+        padding: 10px 50px;
+        color: #4E535D;
+        font-size: 25px;
+        font-weight: bold;
+      }
+  a {
+    text-decoration: none;
+      }
+  h1 {
+    font-size: 50px;
+    text-decoration-color: #000;
+      }
+  .tilbud {
+    font-size: 40px;
+  }
+  button.scan_side_start {
+    font-size: 40px;
+  }
+  .h2 {
+    font-size: 40px;
+  }
+  button.scanner {
+    width: 250px;
+    height: 130px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+}
+ /* Mobiles */
+@media screen and (max-width: 568px) {
+  .main_container {
+    height: 100%;
+    margin: auto;
+  }
+  .main_content {
+    margin: auto;
+  }
+  p.privatsvilkor {
+    margin-top: 50px;
+  }
+  header {
+    /*height: 65px;*/
+    background-color: #8C1419;
+    /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+    .header_logo {
+        width: 40%;
+        float: left;
+    }
+    img.cooplogo {
+        max-width: 10rem;
+        height: auto;
+    }
+    img.burgermenu {
+        max-width: 4rem;
+        height: auto;
+       }
+    /*Menu starts here*/
+.tilbud, .tilbud_side, {
+    text-decoration: none;
+    color: #efefef;
+    margin: 10px;
+    line-height: 80px;
+    font-size: 25px;
+    font-weight: bold;
+    }
+.tilbud {
+    font-size: 40px;
+  }
+h1 {
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    }
+
+/*Coop Butikker Menu*/
+
+.coop_butikker {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.valgbutik {
+    font-size: 40px;
+    color: #8C1419;
+    margin-bottom: 10px;
+}
+.brugsenlogo, .superbrugsenlogo, .kvicklylogo, .dagliglogo, .irmalogo {
+    width: 200px;
+    height: 70px;
+}
+.faktalogo {
+    width: 210px;
+    height: 90px;
+}
+/*Scan Start Side*/
+button.scan_side, button.scan_side_start {
+  color: #efefef;
+  line-height: 80px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #8C1419;
+  margin: 20px;
+  border-radius: 10px;
+  width: 250px;
+  outline: none;
+}
+button.scan_side_start {
+  font-size: 40px;
+}
+
+/*Footer ikoner*/
+footer{
+    background-color: #8C1419;
+    /*box-shadow: 0 -8px 10px -8px #4E535D;*/
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+img.footer_ikoner {
+    height: 60px;
+    width: auto;
+    float: left;
+}
+.footer_ikoner {
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_grid {
+    text-decoration: none;
+    color: #FFF;
+    display: grid;
+    font-size: 0.7rem;
+  }
+
+/*Find Varer*/
+img.butter {
+    width: 150px;
+    height: 130px;
+}
+
+.grey_tekst {
+    font-size: 40px;
+    color: #4E535D;
+    margin-bottom: 30px;
+}
+a.next {
+    margin-top: 100px;
+    border: 2px solid #4E535D;
+    padding: 10px 50px;
+    color: #4E535D;
+    font-size: 25px;
+    font-weight: bold;
+  }
+a {
+    text-decoration: none;
+  }
+h1 {
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+  }
+  .h2 {
+    font-size: 40px;
+  }
+  button.scanner {
+    width: 250px;
+    height: 130px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  img.black_arrow {
+    height: 80px;
+    width: 80px;
+}
+/*Footer ikoner*/
+div.quiz{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+img.quiz_butter_answer {
+  height: 100px;
+  width: auto;
+  float: left;
+}
+.quiz_butter {
+  width: 100px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seddel, .seddel input[type=text] {
+    float: none;
+    display: flex;
+    margin: 0;
+    padding: 14px;
+    border-color: black;
+    justify-content: center;
+    border-radius: 5px;
+  }
+.seddel input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  border: 1px solid;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100%;
+}
+.seddel i{
+  height: 16px;
+  margin-top: 12px;
+  margin-right: 4px;
+}
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+.input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}

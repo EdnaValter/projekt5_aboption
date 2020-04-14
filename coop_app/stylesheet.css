@@ -10,7 +10,7 @@
 }
 body {
   height: 100%;
-  width: 100%;
+  width: 100%;    
 }
 .main_container {
   height: 100%;
@@ -43,10 +43,11 @@ body {
 
 #find_og_scan {
   display: none;
-  background-image: url('img_small/slot-bg.png');
+  background-image: url('img/slot-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 640px;
+  position: relative;
+  height: 100%;
   width: auto;
 }
 #quiz {
@@ -61,11 +62,26 @@ body {
 #no_reward {
   display: none;
 }
-
 #grocery_list {
   display: none;
   margin-top: 30px;
 }
+#wonder_scan_page {
+  background-image: url('img/slot-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 640px;
+  width: auto;
+}
+.wonder_scan {
+  font-family: 'IM Fell French Canon SC', serif;
+  color: darkorange;
+  height: 640px;
+  
+}
+
 
 /*Quiz style*/
 .quiz_butter {
@@ -294,7 +310,7 @@ width: 90%;
 height: 16px;
 }
 .seddel {
-width: 100%;
+width: 27%;
 justify-content: center;
 }
 /* Include the padding and border in an element's total width and height */
@@ -344,21 +360,13 @@ font-size: 16px;
 color: #707070;
 
 }
-
-#wonder_scan_page {
-background-image: url('img_small/slot-bg.png');
-background-repeat: no-repeat;
-width: 100%;
-height: auto;
+h3 {
+  font-size: 25px;
 }
-.wonderscan {
- font-size: 50px;
- color: darkorange;
- font-family: 'IM Fell French Canon SC', serif;
- padding-top: 10px;
- height: 500px;
+label {
+  font-size: 20px;
+  font-weight: bold;
 }
-
  /* DESKTOP */
 @media screen and (min-width: 1024px) {
     header {
@@ -399,8 +407,6 @@ height: auto;
       margin-top: 50px;
     }
     header{
-        /*box-shadow: 0 8px 10px -8px #4E535D;
-        height: 50px;*/
         background-color: #8C1419;
         /*box-shadow: 0 -8px 10px -8px #4E535D;*/
         position: relative;
@@ -466,7 +472,7 @@ height: auto;
   h1 {
     font-size: 50px;
     color: #707070;
-      }
+  }
   .tilbud {
     font-size: 40px;
   }
@@ -476,10 +482,11 @@ height: auto;
   .h2_find {
     font-size: 40px;
     color: #eee;
+    padding-top: 20px;
   }
   .h2_scan {
     font-size: 40px;
-    color: #8C1419;
+    color: #efefef;
   }
   button.scanner {
     width: 250px;
@@ -510,9 +517,7 @@ height: auto;
     margin-top: 50px;
   }
   header {
-    /*height: 65px;*/
     background-color: #8C1419;
-    /*box-shadow: 0 -8px 10px -8px #4E535D;*/
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -588,7 +593,6 @@ button.scan_side_start {
 /*Footer ikoner*/
 footer{
     background-color: #8C1419;
-    /*box-shadow: 0 -8px 10px -8px #4E535D;*/
     position: fixed;
     display: flex;
     justify-content: space-around;
@@ -620,12 +624,13 @@ img.footer_ikoner {
 
 /*Find Varer*/
 #find_og_scan {
-  display: none;
-  background-image: url('img_small/slot-bg.png');
+  background-image: url('img/slot-bg.png');
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  height: 640px;
+  height: 100%;
   width: auto;
+  }
 }
 img.butter {
     width: 150px;
@@ -681,8 +686,7 @@ h1 {
     width: 80px;
 }
 /*Quiz style*/
-
-main#quiz{
+#quiz{
   max-width: 100%;
   height: auto;
 }
@@ -780,20 +784,7 @@ ul li:nth-child(odd) {
 .coop_lokationer {
   color: #707070;
 
-}
-
-#wonder_scan_page {
-  background-image: url('img_small/slot-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 640px;
-  width: auto;
-}
-.wonderscan {
-   font-size: 50px;
-   color: darkorange;
-   font-family: 'IM Fell French Canon SC', serif;
-   padding-top: 10px;
-   height: 500px;
   }
+
+
 }

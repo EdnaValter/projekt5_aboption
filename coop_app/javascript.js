@@ -58,7 +58,6 @@ function build_quiz_item() {
     document.getElementById('r3').onclick = function(){alert("Tillykke du har vundet " + grocery_list[grocery_list_selected[quiz_index]].Rewards[2]);next_quiz_item();};
 }
 
-
 function item_clicked(objThis) {
     if(objThis.checked){
         grocery_list_selected.push(objThis.value);

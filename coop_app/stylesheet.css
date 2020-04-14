@@ -34,13 +34,13 @@ body {
   display: none;
 }
 
-
 #main_scan {
   display: none;
 }
 #opret_bruger {
   display: none;
 }
+
 #find_og_scan {
   display: none;
   background-image: url('img_small/slot-bg.png');
@@ -130,10 +130,7 @@ p.vilkår {
 /*Header Style*/
 
 header{
-    /*box-shadow: 0 8px 10px -8px #4E535D;
-    height: 50px;*/
     background-color: #8C1419;
-    /*box-shadow: 0 -8px 10px -8px #4E535D;*/
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -185,22 +182,18 @@ img.burgermenu {
 }
 
 /*inkøbsliste*/
-
 .soegefelt{
   margin: 1em 0 1em 0em;
   padding: 1em;
   width: -webkit-fill-available;
 }
-
 #search{
   display: flex;
   height: 3em;
 }
-
 .search-icon{
   width: 3em;
 }
-
 .butiktabel{
     min-height: 300px;
     max-width: 300px;
@@ -226,7 +219,6 @@ img.burgermenu {
 nav li.vaelgbutik{
   background-color: #FFF;
 }
-
 .afstand_box{
     width: 100%;
     display: flex;
@@ -234,13 +226,9 @@ nav li.vaelgbutik{
     margin-bottom: .3em;
     margin-top: .3em;
 }
-
 nav li.afstand{
   background-color: #FFF;
 }
-
-
-
 /*Coop footer*/
 footer{
     background-color: #8C1419;
@@ -279,20 +267,107 @@ img.footer_ikoner {
 a:hover{
   text-decoration: underline;
 }
+.seddel, .seddel input[type=text] {
+  float:none;
+  display: inline-block;
+  margin: 0;
+  padding: 14px;
+  border-color: black;
+  justify-content: center;
+  border-radius: 5px;
+  text-align: center;
+}
+.seddel input[type=text] {
+width: 50%;
+-webkit-transition: width 0.4s ease-in-out;
+transition: width 0.4s ease-in-out;
+border: 1px solid;
+border-color: gray;
+}
+
+/* When the input field gets focus, change its width to 90% */
+input[type=text]:focus {
+width: 90%;
+}
+/*Styling the search icon*/
+.seddel i{
+height: 16px;
+}
+.seddel {
+width: 100%;
+justify-content: center;
+}
+/* Include the padding and border in an element's total width and height */
+* {
+box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+margin: 0;
+padding: 0;
+}
+
+/* Style the list items */
+ul li {
+cursor: pointer;
+position: relative;
+padding: 12px 40px 12px 40px;
+background: #eee;
+font-size: 18px;
+transition: 0.2s;
+list-style-type: none;
+text-align: left;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+background: #f9f9f9;
+}
+
+.butik_wrap{
+display: flex;
+justify-content: center;
+}
+
+.input {
+margin: 0;
+border: none;
+border-radius: 0;
+width: 75%;
+padding: 10px;
+float: left;
+font-size: 16px;
+}
+
+.coop_lokationer {
+color: #707070;
+
+}
+
+#wonder_scan_page {
+background-image: url('img_small/slot-bg.png');
+background-repeat: no-repeat;
+width: 100%;
+height: auto;
+}
+.wonderscan {
+ font-size: 50px;
+ color: darkorange;
+ font-family: 'IM Fell French Canon SC', serif;
+ padding-top: 10px;
+ height: 500px;
+}
 
  /* DESKTOP */
 @media screen and (min-width: 1024px) {
     header {
-        /*display: block;*/
         background-color: #8C1419;
-        /*box-shadow: 0 -8px 10px -8px #4E535D;*/
         position: relative;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-
     }
-
     .valgbutik {
         font-size: 40px;
         color: #8C1419;
@@ -301,11 +376,11 @@ a:hover{
     .tilbud{
       font-size: 40px;
     }
-
     h1 {
       font-size: 50px;
       font-family: 'Raleway', sans-serif;
     }
+
 }
 
 
@@ -457,7 +532,7 @@ a:hover{
         height: auto;
        }
     /*Menu starts here*/
-.tilbud, .tilbud_side, {
+.tilbud, .tilbud_side {
     text-decoration: none;
     color: #efefef;
     margin: 10px;
@@ -686,9 +761,6 @@ ul li {
 ul li:nth-child(odd) {
   background: #f9f9f9;
 }
-.butikker_liste_distance{
-
-}
 
 .butik_wrap{
   display: flex;
@@ -709,9 +781,6 @@ ul li:nth-child(odd) {
   color: #707070;
 
 }
-#wonder_scan_page {
-  background-image: url('img');
-}
 
 #wonder_scan_page {
   background-image: url('img_small/slot-bg.png');
@@ -726,4 +795,5 @@ ul li:nth-child(odd) {
    font-family: 'IM Fell French Canon SC', serif;
    padding-top: 10px;
    height: 500px;
+  }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="da">
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="Coop App">
@@ -27,7 +27,7 @@
             <div id="opret_bruger">
                 <a href="index.html"><img class="cooplogored" src="img_small/cooplogo_darkred.png" alt="coop logo darkred"></a>
                 <h2 class="valgbutik">Opret Bruger</h2>
-                <form action="">
+                <form action="#">
                     <input type="text" id="firstname" name="firstname" placeholder="Fornavn"><br><br>
                     <input type="text" id="lastname" name="lastname" placeholder="Efternavn"><br><br>
                     <input type="text" id="opret_email" name="opret_email" placeholder="Email"><br><br>
@@ -46,14 +46,14 @@
                     </div>
                 </header>
 
-                <main id="main_content">
+                <div id="main_content">
                     <button class="tilbud" type="button" onclick="go_to_content('tilbud_content')">Tilbud</button><br /><br />
                     <button class="tilbud_side" type="button" onclick="go_to_content('grocery_list')">Wonderscan</button><br /><br />
                    <!--<button class="tilbud_side" type="button" onclick="window.location.href = 'wonder_scan.html';">Wonderscan</button><br /><br />-->
                     <button class="tilbud_side" type="button" onclick="go_to_content('butikker_lokationer')">Lokationer</button><br /><br />
                     <button class="login" type="button" onclick="logout()">Log af</button><br /><br />
-                </main>
-                <main id="tilbud_content">
+                </div>
+                <div id="tilbud_content">
                     <br>
                     <div class="coop_butikker">
                       <h1 class="h1">Vælg butik:</h1>
@@ -74,9 +74,9 @@
                         <img class="kvicklylogo" src="img_small/Irma.png" alt="fakta butik">
                       </a>
                     </div>
-                  </main>
+                </div>
 
-                <main id="butikker_lokationer">
+                <div id="butikker_lokationer">
                     <div class="coop_lokationer">
                       <h1 class="h1">Butikker</h1>
                       <br>
@@ -103,7 +103,7 @@
                       </div>
                       <br><br><br>
                     </div>
-                  </main>
+                </div>
 
 
 
@@ -111,22 +111,22 @@
 
 
 
-                <main id="main_scan">
+                <div id="main_scan">
                     <button class="scan_side_start" type="button" onclick="go_to_content('find_og_scan')">Start Spil</button><br /><br />
                     <button class="scan_side" type="button" onclick="window.location.href='indkoebsseddel.html';">Indkøbsseddel</button><br /><br />
                     <button class="scan_side" type="button" onclick="">Samling</button><br /><br />
                     <button class="scan_side" type="button" onclick="">Præmier</button><br /><br />
                     <!--<button class="scan_side" type="button" onclick="go_to_content('main_content')">Tilbage</button><br /><br />-->
                     <a href="index.html"><img class="black_arrow" src="img/back-arrow.png" alt=""></a>
-                </main>
-                <main id="find_og_scan">
+                </div>
+                <div id="find_og_scan">
                     <h2 class="h2_find" id="h2_find"></h2>
                     <img id="img_find" src="" alt="produkt billede"><br/><br/>
                     <h2 class="h2_scan">Scan vare</h2>
                     <button class="scanner" onclick="go_to_content('quiz')"></button>
                     <!--<button class="scan_side" type="button" onclick="go_to_content('main_content')">Tilbage</button><br /><br />-->
-                </main>
-                <main id="quiz">
+                </div>
+                <div id="quiz">
                     <h2 class="question" id="question"></h2>
                     <div class="quiz_butter">
                         <button id="q1" class="svar_1"></button>
@@ -137,8 +137,8 @@
                     <div class="quiz_butter">
                         <button id="q3" class="svar_1"></button>
                     </div>
-                </main>
-                <main id="reward">
+                </div>
+                <div id="reward">
                     <h2 class="question">Korrekt!</h2>
                     <h3>Vælg en præmie</h3>
                     <div class="quiz_butter">
@@ -156,15 +156,15 @@
                             <img id="r3" class="quiz_butter_answer" src="img_small/gave.png">
                         </button>
                     </div>
-                </main>
+                </div>
 
-                <main id="no_reward">
+                <div id="no_reward">
                     <h2 class="question">Prøve igen</h2>
                     <h3>Scan et nyt produkt</h3>
                     <button type="submit" onclick="go_to_content('find_og_scan')">Næste½1½  ½</button>
-                </main>
+                </div>
 
-                <main id="grocery_list">
+                <div id="grocery_list">
                     <!--<h2 class="h2">Indkøbsseddel</h2>-->
                      <h3>Tilføj vare til din Wonderscan indkøbsliste.</h3><br><br>
                      <input type="checkbox" onclick="item_clicked(this);" id="p0" value="0">
@@ -181,7 +181,7 @@
                      <label for="Appelsinjuice"> Appelsinjuice</label><br><br>
 
                      <button class="tilbud_side" type="button" onclick="go_to_content('find_og_scan');quiz_begin();">Start Wonderscan</button><br /><br />
-                </main>
+                </div>
                 <footer>
                     <div class="footer_ikoner_tekst">
                       <a class="footer_grid" onclick="go_to_content('tilbud_content')"><img class="footer_ikoner" src="img_small/tilbudikon-hvid.png" alt="tilbud ikon">Tilbud</a>

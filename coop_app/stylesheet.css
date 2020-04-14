@@ -589,29 +589,34 @@ img.quiz_butter_answer {
   font-size: 30px;
 }
 .seddel, .seddel input[type=text] {
-    float: none;
-    display: flex;
+    float:none;
+    display: inline-block;
     margin: 0;
     padding: 14px;
     border-color: black;
     justify-content: center;
     border-radius: 5px;
+    text-align: center;
   }
 .seddel input[type=text] {
-  width: 150px;
+  width: 40%;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
   border: 1px solid;
+  border-color: gray;
 }
 
-/* When the input field gets focus, change its width to 100% */
+/* When the input field gets focus, change its width to 90% */
 input[type=text]:focus {
-  width: 100%;
+  width: 90%;
 }
+/*Styling the search icon*/
 .seddel i{
   height: 16px;
-  margin-top: 12px;
-  margin-right: 4px;
+}
+.seddel {
+  width: 100%;
+  justify-content: center;
 }
 /* Include the padding and border in an element's total width and height */
 * {
@@ -628,37 +633,25 @@ ul {
 ul li {
   cursor: pointer;
   position: relative;
-  padding: 12px 12px 12px 12px;
+  padding: 12px 40px 12px 40px;
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
   list-style-type: none;
-
-  /* make the list items unselectable */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  text-align: left;
 }
 
-ul .butikker_liste {
-  text-align: right;
-}
 /* Set all odd list items to a different color (zebra-stripes) */
 ul li:nth-child(odd) {
   background: #f9f9f9;
+}
+.butikker_liste_distance{
+  
 }
 
 .butik_wrap{
   display: flex;
   justify-content: center;
-}
-
-/* Clear floats after the header */
-.header:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* Style the input (I made you a class Matthis so that the login page wouldn't be affected :D ) */
@@ -670,24 +663,6 @@ ul li:nth-child(odd) {
   padding: 10px;
   float: left;
   font-size: 16px;
-}
-
-/* Style the "Add" button */
-.addBtn {
-  padding: 10px;
-  width: 25%;
-  background: #d9d9d9;
-  color: #555;
-  float: left;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 0;
-}
-
-.addBtn:hover {
-  background-color: #bbb;
 }
 
 .coop_lokationer {

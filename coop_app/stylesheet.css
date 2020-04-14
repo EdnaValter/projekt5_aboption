@@ -15,6 +15,11 @@ body {
 .main_container {
   height: 100%;
   margin: auto;
+  position: relative;
+  min-height: 100vh;
+}
+.content_wrap{
+  padding-bottom: 2.5rem;
 }
 /* Never ever touch this id's*/
 #home_page {
@@ -233,6 +238,10 @@ footer{
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 0.3rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
 }
 .footer_ikoner_tekst{
   display: inline-flex;
@@ -253,7 +262,7 @@ img.footer_ikoner {
 .footer_grid {
     text-decoration: none;
     color: #FFF;
-    display: grid;
+    display: grid
   }
 a:hover{
   text-decoration: underline;
@@ -293,6 +302,11 @@ a:hover{
     .main_container {
       height: 100%;
       margin: auto;
+      position: relative;
+      min-height: 100vh;
+    }
+    .content_wrap{
+      padding-bottom: 2.5rem;
     }
     p.privatsvilkor {
       margin-top: 50px;
@@ -320,6 +334,10 @@ a:hover{
         display: flex;
         justify-content: space-around;
         padding: 0.3rem;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 8rem;
     }
     img.footer_ikoner {
         height: 100px;
@@ -389,6 +407,11 @@ a:hover{
   .main_container {
     height: 100%;
     margin: auto;
+    position: relative;
+    min-height: 100vh;
+  }
+  .content_wrap{
+    padding-bottom: 6rem;
   }
   .main_content {
     margin: auto;
@@ -483,11 +506,15 @@ footer{
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 0.3rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
 }
 img.footer_ikoner {
     height: 60px;
     width: auto;
-    float: left;
+    /*float: left;*/
 }
 .footer_ikoner {
     width: 100px;

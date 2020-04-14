@@ -12,6 +12,7 @@
       </head>
     <body>
         <main class="main_container">
+          <div class="content_wrap">
             <div id="login_page">
                 <a href="index.html"><img class="cooplogored" src="img_small/cooplogo_darkred.png" alt="coop logo darkred"></a>
                 <h2 class="valgbutik">Login til Coop</h2><br />
@@ -44,7 +45,7 @@
                         <a href="#" ><img class="burgermenu" src="img_small/burgermenu-hvid.png" alt="coop burgermenu"></a>
                     </div>
                 </header>
-                <br /><br />
+
                 <main id="main_content">
                     <button class="tilbud" type="button" onclick="window.location.href = 'tilbud.html';">Tilbud</button><br /><br />
                     <button class="tilbud_side" type="button" onclick="go_to_content('grocery_list')">Lav Indkøbsseddel</button><br /><br />
@@ -122,25 +123,28 @@
 
                      <button class="tilbud_side" type="button" onclick="go_to_content('find_og_scan');quiz_begin();">Find og Scan</button><br /><br />
                 </main>
-
                 <footer>
                     <div class="footer_ikoner_tekst">
-                        <a class="footer_grid" href="https://om.coop.dk/koncern/vores+butikker/ugens+tilbudsaviser.aspx" ><img class="footer_ikoner" src="img_small/tilbudikon-hvid.png" alt="tilbud ikon">Tilbud</a>
+                        <a class="footer_grid" href="https://om.coop.dk/koncern/vores+butikker/ugens+tilbudsaviser.aspx" ><img class="footer_ikoner" src="img_small/tilbudikon-hvid.png" alt="tilbud ikon"/>Tilbud</a>
                     </div>
                     <div class="footer_ikoner_tekst">
-                        <a class="footer_grid" onclick="window.location.href = 'tilbud.html';" ><img class="footer_ikoner" src="img_small/castle-icon.png" alt="hjem">Wonder Scan</a>
+                        <a class="footer_grid" onclick="window.location.href = 'tilbud.html';" ><img class="footer_ikoner" src="img_small/castle-icon.png" alt="Wonder scan"/>Wonder Scan</a>
                     </div>
                     <div class="footer_ikoner_tekst">
-                        <a class="footer_grid" onclick="go_to_content('main_content')" ><img class="footer_ikoner" src="img_small/hjem-knap.png" alt="hjem">Hjem</a>
+                        <a class="footer_grid" onclick="go_to_content('main_content')" ><img class="footer_ikoner" src="img_small/hjem-knap.png" alt="hjem"/>Hjem</a>
                     </div>
                     <div class="footer_ikoner_tekst">
-                        <a class="footer_grid" href="#" ><img class="footer_ikoner" src="img_small/store-symbol-no-outline.png" alt="butik ikon">Butikker</a>
+                        <a class="footer_grid" href="#" ><img class="footer_ikoner" src="img_small/store-symbol-no-outline.png" alt="butik ikon"/>Butikker</a>
                     </div>
                     <div class="footer_ikoner_tekst">
+                        <a class="footer_grid" onclick="go_to_content('grocery_list')" ><img class="footer_ikoner" src="img_small/clipboard-list-solid-hvid.png" alt="Indkøbsliste"/>Indkøbsliste</a>
+                    </div>
+                    <!--<div class="footer_ikoner_tekst">
                         <a class="footer_grid" onclick="go_to_content('grocery_list')" ><img class="footer_ikoner" src="img_small/clipboard-list-solid-hvid.png" alt="indkøbsseddel">Indkøbsliste</a>
-                    </div>
+                    </div>-->
                 </footer>
             </div>
+          </div>
         </main>
     </body>
 </html>

@@ -29,7 +29,7 @@ function next_quiz_item() {
         go_to_content('main_content')
     }
 }
-// Quiz page + indhold 
+// Quiz page + indhold
 function build_quiz_item() {
     document.getElementById('h2_find').innerHTML = "Find " + grocery_list[grocery_list_selected[quiz_index]].name;
     document.getElementById('img_find').src = "grocery_img/" + grocery_list[grocery_list_selected[quiz_index]].name + ".png";
@@ -84,10 +84,10 @@ function go_to_opret_bruger(){ // go to opret bruger side
 }
 
 function OpretBruger(firstname, lastname, email, password){ // indtast fornavn, efternavn, email og kodeord
-    if(firstname=="Mona" && lastname=="Lisa" && email=="mona@lisa.dk" && password=="123"){// Hvis du opflyder alle formular(fornavn:Mona Efternavn:Lisa email:mona@lisa.dk, kodeord:123) 
+    if(firstname=="Mona" && lastname=="Lisa" && email=="mona@lisa.dk" && password=="123"){// Hvis du opflyder alle formular(fornavn:Mona Efternavn:Lisa email:mona@lisa.dk, kodeord:123)
         document.getElementById("opret_bruger").style.display = "none"; // blev du oprettet og kom direkte til landing page
-        document.getElementById("home_page").style.display = "block"; 
-        alert("Du blev oprettet"); 
+        document.getElementById("home_page").style.display = "block";
+        alert("Du blev oprettet");
     }else{
         alert('Udfyld formular.'); // ellers opfyld formular
     }
@@ -102,4 +102,14 @@ function go_to_content(new_content_name){
     document.getElementById(current_content).style.display = "none";
     document.getElementById(new_content_name).style.display = "block";
     current_content = new_content_name;
+}
+
+function søg_butik(firstname, lastname, email, password){ // indtast fornavn, efternavn, email og kodeord
+    if(søg_butik=="Netto") //søg efter en butik
+        document.getElementById("opret_bruger").style.display = "none"; // blev du oprettet og kom direkte til landing page
+        document.getElementById("home_page").style.display = "block";
+        alert("Du blev oprettet");
+    }else{
+        alert('Udfyld formular.'); // ellers opfyld formular
+    }
 }

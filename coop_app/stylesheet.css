@@ -19,7 +19,7 @@ body {
   min-height: 100vh;
 }
 .content_wrap{
-  padding-bottom: 2.5rem;
+  padding-bottom: 8rem;
 }
 /* Never ever touch this id's*/
 #home_page {
@@ -306,7 +306,7 @@ a:hover{
       min-height: 100vh;
     }
     .content_wrap{
-      padding-bottom: 2.5rem;
+      padding-bottom: 8rem;
     }
     p.privatsvilkor {
       margin-top: 50px;

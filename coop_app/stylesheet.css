@@ -360,7 +360,7 @@ a:hover{
       }
   h1 {
     font-size: 50px;
-    color: #000;
+    color: #707070;
       }
   .tilbud {
     font-size: 40px;
@@ -536,7 +536,7 @@ a {
 h1 {
     font-size: 50px;
     font-family: 'Raleway', sans-serif;
-    color: #000;
+    color: #707070;
   }
 .h2 {
     font-size: 40px;
@@ -646,7 +646,7 @@ ul li:nth-child(odd) {
   background: #f9f9f9;
 }
 .butikker_liste_distance{
-  
+
 }
 
 .butik_wrap{

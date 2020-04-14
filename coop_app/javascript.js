@@ -103,13 +103,3 @@ function go_to_content(new_content_name){
     document.getElementById(new_content_name).style.display = "block";
     current_content = new_content_name;
 }
-
-function søg_butik(firstname, lastname, email, password){ // indtast fornavn, efternavn, email og kodeord
-    if(søg_butik=="Netto") //søg efter en butik
-        document.getElementById("opret_bruger").style.display = "none"; // blev du oprettet og kom direkte til landing page
-        document.getElementById("home_page").style.display = "block";
-        alert("Du blev oprettet");
-    }else{
-        alert('Udfyld formular.'); // ellers opfyld formular
-    }
-}

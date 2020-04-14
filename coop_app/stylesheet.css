@@ -269,7 +269,7 @@ a:hover{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 0.3rem;
+
     }
 
     .valgbutik {
@@ -478,11 +478,15 @@ button.scan_side_start {
 footer{
     background-color: #8C1419;
     /*box-shadow: 0 -8px 10px -8px #4E535D;*/
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 0.3rem;
+    left: 0;
+    bottom: 0;
+    width: 100%
+
 }
 img.footer_ikoner {
     height: 60px;

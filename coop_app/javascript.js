@@ -1,10 +1,10 @@
 var grocery_list = [
     {name:"Smør", question:'Hvor kommer smør fra?', choices:["Mælk", "Smør", "Høne"], Rewards:["en slikkepind", "en 2% rabat kupon", "et monsterkort"], right_choice:"Mælk"},
-    {name:"Bananer", question:'Hvilken farver Bananer har?', choices:["Grøn", "Gul", "Rød"], Rewards:["et monster kort", "en slikkepind", "et monsterkort"], right_choice:"Gul"},
-    {name:"Æg", question:'Hvilken form æg har?', choices:["Aflang", "Firkant", "Trekant"], Rewards:["et monsterkort", "prinsesse kort", "peter pedal kort"], right_choice:"Aflang"},
+    {name:"Bananer", question:'Hvilken farver Bananer har?', choices:["Blå", "Gul", "Rød"], Rewards:["et monster kort", "en slikkepind", "et monsterkort"], right_choice:"Gul"},
+    {name:"Æg", question:'Hvilken form æg har?', choices:["Aflang", "Firkant", "Cirkel"], Rewards:["et monsterkort", "prinsesse kort", "peter pedal kort"], right_choice:"Aflang"},
     {name:"Mælk", question:'Hvad hedder Koen babyer?', choices:["Ko", "Kalv", "Føl"], Rewards:["et kort", "et kort", "et kort"], right_choice:"Kalv"},
     {name:"Yoghurt", question:'Hvor kommer yoghurt fra?', choices:["Ko", "Smør", "Høne"], Rewards:["et kort", "et kort", "et kort"], right_choice:"Ko"},
-    {name:"Appelsinjuice", question:'Hvor kommer appelsin juice fra?', choices:["Æble", "Appelsin", "Banan"], Rewards:["et kort", "5% rabat kupon", "et kort"], right_choice:"Appelsin"},
+    {name:"Appelsinjuice", question:'Hvor kommer appelsin juice fra?', choices:["Æble", "Appelsin", "Pear"], Rewards:["et kort", "5% rabat kupon", "et kort"], right_choice:"Appelsin"},
  ];
 var grocery_list_selected = [];
 var current_content = 'main_content';

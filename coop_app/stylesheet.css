@@ -278,7 +278,7 @@ a:hover{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 0.3rem;
+
     }
 
     .valgbutik {
@@ -378,7 +378,7 @@ a:hover{
       }
   h1 {
     font-size: 50px;
-    color: #000;
+    color: #707070;
       }
   .tilbud {
     font-size: 40px;
@@ -467,6 +467,7 @@ h1 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    height:800px;
 }
 .valgbutik {
     font-size: 40px;
@@ -474,12 +475,12 @@ h1 {
     margin-bottom: 10px;
 }
 .brugsenlogo, .superbrugsenlogo, .kvicklylogo, .dagliglogo, .irmalogo {
-    width: 200px;
-    height: 70px;
+    width: 350px;
+    height: 100px;
 }
 .faktalogo {
-    width: 210px;
-    height: 90px;
+    width: 350px;
+    height: 160px;
 }
 /*Scan Start Side*/
 button.scan_side, button.scan_side_start {
@@ -501,7 +502,7 @@ button.scan_side_start {
 footer{
     background-color: #8C1419;
     /*box-shadow: 0 -8px 10px -8px #4E535D;*/
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -563,7 +564,7 @@ a {
 h1 {
     font-size: 50px;
     font-family: 'Raleway', sans-serif;
-    color: #000;
+    color: #707070;
   }
 .h2 {
     font-size: 40px;
@@ -616,29 +617,34 @@ img.quiz_butter_answer {
   font-size: 30px;
 }
 .seddel, .seddel input[type=text] {
-    float: none;
-    display: flex;
+    float:none;
+    display: inline-block;
     margin: 0;
     padding: 14px;
     border-color: black;
     justify-content: center;
     border-radius: 5px;
+    text-align: center;
   }
 .seddel input[type=text] {
-  width: 130px;
+  width: 40%;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
   border: 1px solid;
+  border-color: gray;
 }
 
-/* When the input field gets focus, change its width to 100% */
+/* When the input field gets focus, change its width to 90% */
 input[type=text]:focus {
-  width: 100%;
+  width: 90%;
 }
+/*Styling the search icon*/
 .seddel i{
   height: 16px;
-  margin-top: 12px;
-  margin-right: 4px;
+}
+.seddel {
+  width: 100%;
+  justify-content: center;
 }
 /* Include the padding and border in an element's total width and height */
 * {
@@ -655,67 +661,25 @@ ul {
 ul li {
   cursor: pointer;
   position: relative;
-  padding: 12px 8px 12px 40px;
+  padding: 12px 40px 12px 40px;
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
-
-  /* make the list items unselectable */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  list-style-type: none;
+  text-align: left;
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
 ul li:nth-child(odd) {
   background: #f9f9f9;
 }
+.butikker_liste_distance{
 
-/* Darker background-color on hover */
-ul li:hover {
-  background: #ddd;
 }
 
-/* When clicked on, add a background color and strike out text */
-ul li.checked {
-  background: #888;
-  color: #fff;
-  text-decoration: line-through;
-}
-
-/* Add a "checked" mark when clicked on */
-ul li.checked::before {
-  content: '';
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
-}
-
-/* Style the close button */
-.close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 12px 16px 12px 16px;
-}
-
-.close:hover {
-  background-color: #f44336;
-  color: white;
-}
-
-/* Clear floats after the header */
-.header:after {
-  content: "";
-  display: table;
-  clear: both;
+.butik_wrap{
+  display: flex;
+  justify-content: center;
 }
 
 /* Style the input (I made you a class Matthis so that the login page wouldn't be affected :D ) */
@@ -729,20 +693,7 @@ ul li.checked::before {
   font-size: 16px;
 }
 
-/* Style the "Add" button */
-.addBtn {
-  padding: 10px;
-  width: 25%;
-  background: #d9d9d9;
-  color: #555;
-  float: left;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 0;
-}
+.coop_lokationer {
+  color: #707070;
 
-.addBtn:hover {
-  background-color: #bbb;
 }

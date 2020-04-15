@@ -20,13 +20,16 @@ function quiz_begin() {
 }
 
 function next_quiz_item() {
+    document.getElementById('p' + grocery_list_selected[quiz_index]).checked = false;
     quiz_index++;
     if(grocery_list_selected.length > quiz_index){
         build_quiz_item();
         go_to_content('find_og_scan')
     }else{
+        quiz_index = 0;
+        grocery_list_selected = [];
         alert("Flot, du har nu fundet alle varerne og kan gå til kassen.");
-        go_to_content('main_content')
+        go_to_content('main_content');
     }
 }
 // Quiz page + indhold

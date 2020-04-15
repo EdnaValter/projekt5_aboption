@@ -820,7 +820,7 @@ ul li:nth-child(odd) {
 
   }
 #q1, #q2, #q3 {
-  width: 100%;
+  width: 100px;
   height: auto;
 }
 

@@ -2,6 +2,15 @@ Wiseflow 16. april kl. 13:00
 
 P5-2 Links til besvarelse - én side (PDF med gruppenr., navn og klasse) der indeholder links til følgende leverancer:
 
+Matthis Luckow
+
+Sebastian Krøgh
+
+Alexander Strange 
+
+Anton Wich 
+
+Edna Valter
 
 
 Fungerende online interaktiv prototype (med undersider) (HTML, CSS, JAVASCRIPT)

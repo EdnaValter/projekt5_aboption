@@ -499,9 +499,28 @@ label {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100%;
+    height: 820px;
     width: auto;
     }
+    /*Quiz style*/
+#quiz{
+  max-width: 100%;
+  height: auto;
+}
+button.svar_1 {
+  display: inline;
+}
+.quiz_butter{
+ max-width: 100%;
+ display: inline-block;
+}
+img.quiz_butter_answer {
+  height: 100px;
+  width: auto;
+}
+.svar_1{
+  display: inline-table;
+}
 
 }
  /* Mobiles */

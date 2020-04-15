@@ -494,14 +494,6 @@ label {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  #find_og_scan {
-    background-image: url('img/slot-bg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: auto;
-    }
 
 }
  /* Mobiles */
@@ -636,7 +628,7 @@ img.footer_ikoner {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 650px;
+  height: 100%;
   width: auto;
   }
 img.butter {

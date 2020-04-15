@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Coop App">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="Coop spil" content="Coop app, spil til børnefamilier">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COOP App</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="javascript.js"></script>
+      </head>
+    <body>
+        <main class="main_container">
+          <div class="content_wrap">
+            <div id="login_page">
+                <a href="index.html"><img class="cooplogored" src="img_small/cooplogo_darkred.png" alt="coop logo darkred"></a>
+                <h2 class="valgbutik">Login til Coop</h2><br />
+                <input type="email" id="email" placeholder="Email"/><br />
+                <input type="password" id="password" placeholder="Kodeord"/><br />
+                <br />
+                <button class="login" type="button" onclick="login(document.getElementById('email').value, document.getElementById('password').value)">Login</button>
+                <p class="eller">Eller</p>
+                <button class="opretbruger" type="button" onclick="go_to_opret_bruger()">Opret Bruger</button>
+                <p class="privatsvilkor"><a class="vilkår" href="https://shopping.coop.dk/coopdk/vilkaar">Privatsvilkår</a></p>
+            </div>
+            <div id="opret_bruger">
+                <a href="index.html"><img class="cooplogored" src="img_small/cooplogo_darkred.png" alt="coop logo darkred"></a>
+                <h2 class="valgbutik">Opret Bruger</h2>
+                <form action="#">
+                    <input type="text" id="firstname" name="firstname" placeholder="Fornavn"><br><br>
+                    <input type="text" id="lastname" name="lastname" placeholder="Efternavn"><br><br>
+                    <input type="text" id="opret_email" name="opret_email" placeholder="Email"><br><br>
+                    <input type="text" id="opret_password" name="opret_password" placeholder="Kodeord"><br><br>
+                    <input class="opretbruger" type="button" value="Opret" onclick="OpretBruger(document.getElementById('firstname').value, document.getElementById('lastname').value, document.getElementById('opret_email').value, document.getElementById('opret_password').value)">
+                </form>
+                <a href="index.html"><img class="black_arrow" src="img/back-arrow.png" alt=""></a>
+            </div>
+            <div id="home_page">
+                <header>
+                    <div class="header_logo">
+                        <a href="#" ><img class="cooplogo" src="img_small/cooplogo.png" alt="coop logo"></a>
+                    </div>
+                    <div class="header_homeikon_burgermenu">
+                        <a href="#" ><img class="burgermenu" src="img_small/burgermenu-hvid.png" alt="coop burgermenu"></a>
+                    </div>
+                </header>
+
+                <div id="main_content">
+                    <button class="tilbud" type="button" onclick="go_to_content('tilbud_content')">Tilbud</button><br /><br />
+                    <button class="tilbud_side" type="button" onclick="go_to_content('grocery_list')">Wonderscan</button><br /><br />
+                   <!--<button class="tilbud_side" type="button" onclick="window.location.href = 'wonder_scan.html';">Wonderscan</button><br /><br />-->
+                    <button class="tilbud_side" type="button" onclick="go_to_content('butikker_lokationer')">Lokationer</button><br /><br />
+                    <button class="login" type="button" onclick="logout()">Log af</button><br /><br />
+                </div>
+                <div id="tilbud_content">
+                    <br>
+                    <div class="coop_butikker">
+                      <h1 class="h1">Vælg butik:</h1>
+                      <br><br>
+                      <a href="https://fakta.dk/tilbudsavis/" target="_blank">
+                        <img class="faktalogo" src="img_small/FAKTA-en-del-af-coop.png" alt="fakta butik">
+                      </a>
+                      <a href="https://daglibrugsen.dk/tilbudsavis/">
+                        <img class="brugsenlogo" src="img_small/Coop_DAGLIBRUGSEN.png" alt="dagli brugsen butik">
+                      </a>
+                      <a href="https://superbrugsen.dk/tilbudsavis">
+                        <img class="superbrugsenlogo" src="img_small/Coop_SUPERBRUGSEN.png" alt="super brugsen butik">
+                      </a>
+                      <a href="https://kvickly.dk/tilbudsavis">
+                        <img class="dagliglogo" src="img_small/Coop_KVICKLY.png" alt="kvickly butik">
+                      </a>
+                      <a href="https://irma.dk/tilbudsavis">
+                        <img class="kvicklylogo" src="img_small/Irma.png" alt="fakta butik">
+                      </a>
+                    </div>
+                </div>
+
+                <div id="butikker_lokationer">
+                    <div class="coop_lokationer">
+                      <h1 class="h1">Butikker</h1>
+                      <br>
+                      <div class="seddel">
+                        <i class="fas fa-search"></i>
+                        <input class="input" type="text" id="søg_butik" placeholder="Søg efter butik">
+                      </div>
+                      <br>
+                      <div class="butik_wrap">
+                        <ul class="butikker_liste">
+                          <li>Fakta</li>
+                          <li>Daglibrugsen</li>
+                          <li>Superbrugsen</li>
+                          <li>Kvickly</li>
+                          <li>Irma</li>
+                        </ul>
+                        <ul id="butikker_liste_distance">
+                          <li>900m</li>
+                          <li>1.2km</li>
+                          <li>1.4km</li>
+                          <li>1.7km</li>
+                          <li>2.2km</li>
+                        </ul>
+                      </div>
+                      <br><br><br>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div id="main_scan">
+                    <button class="scan_side_start" type="button" onclick="go_to_content('find_og_scan')">Start Spil</button><br /><br />
+                    <button class="scan_side" type="button" onclick="window.location.href='indkoebsseddel.html';">Indkøbsseddel</button><br /><br />
+                    <button class="scan_side" type="button" onclick="">Samling</button><br /><br />
+                    <button class="scan_side" type="button" onclick="">Præmier</button><br /><br />
+                    <!--<button class="scan_side" type="button" onclick="go_to_content('main_content')">Tilbage</button><br /><br />-->
+                    <a href="index.html"><img class="black_arrow" src="img/back-arrow.png" alt=""></a>
+                </div>
+                <div id="find_og_scan">
+                    <h2 class="h2_find" id="h2_find"></h2>
+                    <img id="img_find" src="" alt="produkt billede"><br/><br/>
+                    <h2 class="h2_scan">Scan vare</h2>
+                    <button class="scanner" onclick="go_to_content('quiz')"></button>
+                    <!--<button class="scan_side" type="button" onclick="go_to_content('main_content')">Tilbage</button><br /><br />-->
+                </div>
+                <div id="quiz">
+                    <h2 class="question" id="question"></h2>
+                    <div class="quiz_butter">
+                        <button id="q1" class="svar_1"></button>
+                    </div>
+                    <div class="quiz_butter">
+                        <button id="q2" class="svar_1"></button>
+                    </div>
+                    <div class="quiz_butter">
+                        <button id="q3" class="svar_1"></button>
+                    </div>
+                </div>
+                <div id="reward">
+                    <h2 class="question">Korrekt!</h2>
+                    <h3>Vælg en præmie</h3>
+                    <div class="quiz_butter">
+                        <button>
+                            <img id="r1" class="quiz_butter_answer" src="img_small/gave.png">
+                        </button>
+                    </div>
+                    <div class="quiz_butter">
+                        <button>
+                            <img id="r2" class="quiz_butter_answer" src="img_small/gave.png">
+                        </button>
+                    </div>
+                    <div class="quiz_butter">
+                        <button>
+                            <img id="r3" class="quiz_butter_answer" src="img_small/gave.png">
+                        </button>
+                    </div>
+                </div>
+
+                <div id="no_reward">
+                    <h2 class="question">Prøve igen</h2>
+                    <h3>Scan et nyt produkt</h3>
+                    <button type="submit" onclick="go_to_content('find_og_scan')">Næste½1½  ½</button>
+                </div>
+
+                <div id="grocery_list">
+                    <!--<h2 class="h2">Indkøbsseddel</h2>-->
+                     <h3>Tilføj vare til din Wonderscan <br>indkøbsliste.</h3><br><br>
+                     <input type="checkbox" onclick="item_clicked(this);" id="p0" value="0">
+                     <label for="Smør"> Smør</label><br>
+                     <input type="checkbox" onclick="item_clicked(this);" id="p1" value="1">
+                     <label for="Bananer"> Bananer</label><br>
+                     <input type="checkbox" onclick="item_clicked(this);" id="p2" value="2">
+                     <label for="Æg"> Æg</label><br>
+                     <input type="checkbox" onclick="item_clicked(this);" id="p3" value="3">
+                     <label for="Mælk"> Mælk</label><br>
+                     <input type="checkbox" onclick="item_clicked(this);" id="p4" value="4">
+                     <label for="Yoghurt"> Yoghurt</label><br>
+                     <input type="checkbox" onclick="item_clicked(this);" id="p5" value="5">
+                     <label for="Appelsinjuice"> Appelsinjuice</label><br><br>
+
+                     <button class="tilbud_side" type="button" onclick="go_to_content('find_og_scan');quiz_begin();">Start Wonderscan</button><br /><br />
+                </div>
+                <footer>
+                    <div class="footer_ikoner_tekst">
+                      <a class="footer_grid" onclick="go_to_content('tilbud_content')"><img class="footer_ikoner" src="img_small/tilbudikon-hvid.png" alt="tilbud ikon">Tilbud</a>
+                    </div>
+                    <div class="footer_ikoner_tekst">
+                        <a class="footer_grid" onclick="go_to_content('grocery_list')"  ><img class="footer_ikoner" src="img_small/castle-icon.png" alt="hjem">Wonderscan</a>
+                    </div>
+                    <div class="footer_ikoner_tekst">
+                        <a class="footer_grid" onclick="go_to_content('main_content')" ><img class="footer_ikoner" src="img_small/hjem-knap.png" alt="hjem">Hjem</a>
+                    </div>
+                    <div class="footer_ikoner_tekst">
+                        <a class="footer_grid" onclick="go_to_content('butikker_lokationer')" ><img class="footer_ikoner" src="img_small/store-symbol-no-outline.png" alt="butik ikon">Butikker</a>
+                    </div>
+                    <div class="footer_ikoner_tekst">
+                        <a class="footer_grid" onclick="go_to_content('grocery_list')" ><img class="footer_ikoner" src="img_small/clipboard-list-solid-hvid.png" alt="indkøbsseddel">Indkøbsliste</a>
+                    </div>
+                </footer>
+            </div>
+          </div>
+        </main>
+    </body>
+</html>

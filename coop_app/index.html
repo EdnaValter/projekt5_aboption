@@ -37,6 +37,7 @@
                 <a href="index.html"><img class="black_arrow" src="img/back-arrow.png" alt=""></a>
             </div>
             <div id="home_page">
+
                 <header>
                     <div class="header_logo">
                         <a href="#" ><img class="cooplogo" src="img_small/cooplogo.png" alt="coop logo"></a>
@@ -46,13 +47,14 @@
                     </div>
                 </header>
 
-                <div id="main_content">
+                <div id="main_content"><br /><br />
                     <button class="tilbud" type="button" onclick="go_to_content('tilbud_content')">Tilbud</button><br /><br />
                     <button class="tilbud_side" type="button" onclick="go_to_content('grocery_list')">Wonderscan</button><br /><br />
                    <!--<button class="tilbud_side" type="button" onclick="window.location.href = 'wonder_scan.html';">Wonderscan</button><br /><br />-->
                     <button class="tilbud_side" type="button" onclick="go_to_content('butikker_lokationer')">Lokationer</button><br /><br />
                     <button class="login" type="button" onclick="logout()">Log af</button><br /><br />
                 </div>
+
                 <div id="tilbud_content">
                     <br>
                     <div class="coop_butikker">
@@ -105,12 +107,6 @@
                     </div>
                 </div>
 
-
-
-
-
-
-
                 <div id="main_scan">
                     <button class="scan_side_start" type="button" onclick="go_to_content('find_og_scan')">Start Spil</button><br /><br />
                     <button class="scan_side" type="button" onclick="window.location.href='indkoebsseddel.html';">Indkøbsseddel</button><br /><br />
@@ -119,6 +115,7 @@
                     <!--<button class="scan_side" type="button" onclick="go_to_content('main_content')">Tilbage</button><br /><br />-->
                     <a href="index.html"><img class="black_arrow" src="img/back-arrow.png" alt=""></a>
                 </div>
+
                 <div id="find_og_scan">
                     <h2 class="h2_find" id="h2_find"></h2>
                     <img id="img_find" src="" alt="produkt billede"><br/><br/>
@@ -126,6 +123,7 @@
                     <button class="scanner" onclick="go_to_content('quiz')"></button>
                     <!--<button class="scan_side" type="button" onclick="go_to_content('main_content')">Tilbage</button><br /><br />-->
                 </div>
+
                 <div id="quiz">
                     <h2 class="question" id="question"></h2>
                     <div class="quiz_butter">
@@ -138,6 +136,7 @@
                         <button id="q3" class="svar_1"></button>
                     </div>
                 </div>
+
                 <div id="reward">
                     <h2 class="question">Korrekt!</h2>
                     <h3>Vælg en præmie</h3>
@@ -182,6 +181,7 @@
 
                      <button class="tilbud_side" type="button" onclick="go_to_content('find_og_scan');quiz_begin();">Start Wonderscan</button><br /><br />
                 </div>
+
                 <footer>
                     <div class="footer_ikoner_tekst">
                       <a class="footer_grid" onclick="go_to_content('tilbud_content')"><img class="footer_ikoner" src="img_small/tilbudikon-hvid.png" alt="tilbud ikon">Tilbud</a>

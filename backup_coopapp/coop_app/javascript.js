@@ -105,3 +105,12 @@ function go_to_content(new_content_name){
     document.getElementById(new_content_name).style.display = "block";
     current_content = new_content_name;
 }
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}

@@ -168,6 +168,15 @@ img.home_knap {
 img.burgermenu {
   max-width: 4rem;
  }
+
+.navlinks{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
 /*Coop Menu*/
 .main_content {
     width: 100%;

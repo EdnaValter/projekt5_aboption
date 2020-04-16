@@ -28,6 +28,8 @@ http://littleplay.dk/coop_styleguide/index.html
 Video (youtube), 2-5 minutter/person, hvor koden forklares, hvert medlem forklarer egen kode del.
 Edna Valter grim video - https://youtu.be/qPwQSmPeBSM
 
+Sebastian Møller Krogh - https://www.youtube.com/watch?v=hu_oFeYyeOA
+
 Video (youtube) 1-3 minutter, der præsenterer jeres løsning for klienten til efterfølgende gennemgang. 
 
 Link til logbog som også indeholder visuel procesdokumentation.

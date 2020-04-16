@@ -70,31 +70,31 @@ function item_clicked(objThis) {
         })
     }
 }
-
-function login(email, password){ // login med din email og kodeord
-    if(email=="" && password==""){// hvis din email er tomt og hvis din kodeord er tomt
-        document.getElementById("login_page").style.display = "none"; // login page close
-        document.getElementById("home_page").style.display = "block"; // home page open
+// login side
+function login(email, password){ 
+    if(email=="" && password==""){
+        document.getElementById("login_page").style.display = "none"; 
+        document.getElementById("home_page").style.display = "block"; 
     }else{
-        alert('Forkert email eller kodeord.'); // ellers forkert email eller kodeord
+        alert('Forkert email eller kodeord.'); 
     }
 }
-
-function go_to_opret_bruger(){ // go to opret bruger side
-    document.getElementById("login_page").style.display = "none"; // login page close
-    document.getElementById("opret_bruger").style.display = "block"; // opret bruger open
+// opret bruger knap
+function go_to_opret_bruger(){ 
+    document.getElementById("login_page").style.display = "none"; 
+    document.getElementById("opret_bruger").style.display = "block";
 }
-
-function OpretBruger(firstname, lastname, email, password){ // indtast fornavn, efternavn, email og kodeord
-    if(firstname=="Mona" && lastname=="Lisa" && email=="mona@lisa.dk" && password=="123"){// Hvis du opflyder alle formular(fornavn:Mona Efternavn:Lisa email:mona@lisa.dk, kodeord:123)
-        document.getElementById("opret_bruger").style.display = "none"; // blev du oprettet og kom direkte til landing page
+// opret bruger side
+function OpretBruger(firstname, lastname, opret_email, opret_password){ 
+    if(firstname=="Mona" && lastname=="Lisa" && opret_email=="mona@lisa.dk" && opret_password=="123"){
+        document.getElementById("opret_bruger").style.display = "none"; 
         document.getElementById("home_page").style.display = "block";
         alert("Du blev oprettet");
     }else{
-        alert('Udfyld formular.'); // ellers opfyld formular
+        alert('Udfyld formular.'); 
     }
 }
-
+// logout knap
 function logout(){
         document.getElementById("home_page").style.display = "none";
         document.getElementById("login_page").style.display = "block";

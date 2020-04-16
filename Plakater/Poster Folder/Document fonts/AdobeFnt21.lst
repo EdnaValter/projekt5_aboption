@@ -4,9 +4,9 @@
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
-OutlineFileName:/Users/AlexanderStrange/Documents/Projekt 5 - Abtion/Poster/Poster Folder/Document fonts/AdobeFnt21.lst
-FileLength:617
-FileModTime:608715640
+OutlineFileName:/Users/AlexanderStrange/Documents/GitHub/projekt5_aboption/Plakater/Poster Folder/Document fonts/AdobeFnt21.lst
+FileLength:853
+FileModTime:608716133
 %EndFont
 
 %BeginFont
@@ -22,7 +22,7 @@ WidthClass:5
 AngleClass:0
 FullName:Minion Pro
 WritingScript:Roman
-OutlineFileName:/Users/AlexanderStrange/Documents/Projekt 5 - Abtion/Poster/Poster Folder/Document fonts/MinionPro-Regular.otf
+OutlineFileName:/Users/AlexanderStrange/Documents/GitHub/projekt5_aboption/Plakater/Poster Folder/Document fonts/MinionPro-Regular.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes

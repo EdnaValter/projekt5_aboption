@@ -50,18 +50,13 @@ body {
   height: 100%;
   width: auto;
 }
-#quiz {
+#quiz, #reward, #no_reward {
   display: none;
-  max-width: 100%;
   padding-top: 0.3rem;
-  height: auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
-#reward {
-  display: none;
-}
-#no_reward {
-  display: none;
-}
+
 #grocery_list {
   display: none;
   margin-top: 30px;
@@ -292,6 +287,7 @@ a:hover{
   justify-content: center;
   border-radius: 5px;
   text-align: center;
+  width: 250px;
 }
 .seddel input[type=text] {
 width: 13%;
@@ -511,10 +507,6 @@ label {
     width: auto;
     }
     /*Quiz style*/
-#quiz{
-  max-width: 100%;
-  height: auto;
-}
 button.svar_1 {
   display: inline;
 }
@@ -528,6 +520,9 @@ img.quiz_butter_answer {
 }
 .svar_1{
   display: inline-table;
+}
+.seddel, .seddel input[type=text] {
+  width: 250px;
 }
 
 }
